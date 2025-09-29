@@ -1,4 +1,4 @@
-import './App.css'
+import "./App.css";
 
 function App() {
   return (
@@ -9,9 +9,15 @@ function App() {
           <div className="flex justify-between items-center h-16">
             <h1 className="text-2xl font-bold text-gray-900">Portfolio</h1>
             <nav className="space-x-8">
-              <a href="#about" className="text-gray-600 hover:text-gray-900">About</a>
-              <a href="#projects" className="text-gray-600 hover:text-gray-900">Projects</a>
-              <a href="#contact" className="text-gray-600 hover:text-gray-900">Contact</a>
+              <a href="#about" className="text-gray-600 hover:text-gray-900">
+                About
+              </a>
+              <a href="#projects" className="text-gray-600 hover:text-gray-900">
+                Projects
+              </a>
+              <a href="#contact" className="text-gray-600 hover:text-gray-900">
+                Contact
+              </a>
             </nav>
           </div>
         </div>
@@ -38,7 +44,9 @@ function App() {
 
         {/* Tech Stack */}
         <div className="mt-16">
-          <h3 className="text-2xl font-bold text-center text-gray-900 mb-8">기술 스택</h3>
+          <h3 className="text-2xl font-bold text-center text-gray-900 mb-8">
+            기술 스택
+          </h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
               <h4 className="font-semibold text-gray-900">React</h4>
@@ -60,7 +68,7 @@ function App() {
         </div>
       </main>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

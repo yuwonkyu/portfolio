@@ -3,13 +3,15 @@
 지금까지 진행한 프로젝트를 정리하고 포트폴리오를 만듭니다.
 
 ## 개발 환경
+
 - React 19.1.1
 - Vite 7.1.7
 - Tailwind CSS
 - pnpm
 
 ## 실행 방법
-```bash
+
+````bash
 pnpm install
 pnpm dev
 ```+ Vite
@@ -28,3 +30,4 @@ The React Compiler is not enabled on this template. To add it, see [this documen
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+````
