@@ -33,7 +33,7 @@ const ProjectSection = ({
           {title}
         </h2>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="flex flex-wrap justify-center gap-8">
           {projects.map((project) => (
             <ProjectCard
               key={project.id}
