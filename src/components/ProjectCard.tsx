@@ -2,7 +2,6 @@ export interface ProjectData {
   id: string;
   title: string;
   description: string;
-  icon: string;
   imageUrl?: string; // 프로젝트 이미지 URL 추가
   imageAlt?: string; // SEO를 위한 이미지 alt 텍스트
   technologies: string[];
@@ -29,43 +28,37 @@ const ProjectCard = ({ project, colorScheme }: ProjectCardProps) => {
     e.currentTarget.style.display = "none";
     const parent = e.currentTarget.parentElement;
     if (parent) {
-      const iconSpan = parent.querySelector(".fallback-icon") as HTMLElement;
-      if (iconSpan) {
-        iconSpan.style.display = "block";
-      }
+      parent.innerHTML = '<div class="text-7xl text-gray-400">🚀</div>';
     }
   };
 
   return (
     <div
-      className={`bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl border ${colorScheme.border} hover:shadow-2xl transition-all duration-300 hover:scale-105`}
+      className={`bg-white/90 backdrop-blur-md rounded-3xl p-10 shadow-2xl border-2 ${colorScheme.border} hover:shadow-3xl transition-all duration-500 hover:scale-102 hover:-translate-y-2 group min-h-[600px]`}
     >
       <div
-        className={`h-64 ${colorScheme.bg} rounded-xl mb-6 flex items-center justify-center overflow-hidden relative`}
+        className={`h-80 ${colorScheme.bg} rounded-2xl mb-8 flex items-center justify-center overflow-hidden relative shadow-lg group-hover:shadow-xl transition-shadow duration-300`}
       >
         {project.imageUrl ? (
-          <>
-            <img
-              src={project.imageUrl}
-              alt={project.imageAlt || `${project.title} 프로젝트 스크린샷`}
-              className="w-full h-full object-contain rounded-xl"
-              onError={handleImageError}
-            />
-            <span className="fallback-icon text-6xl absolute hidden">
-              {project.icon}
-            </span>
-          </>
+          <img
+            src={project.imageUrl}
+            alt={project.imageAlt || `${project.title} 프로젝트 스크린샷`}
+            className="w-full h-full object-contain rounded-2xl transition-transform duration-300 group-hover:scale-105"
+            onError={handleImageError}
+          />
         ) : (
-          <span className="text-6xl">{project.icon}</span>
+          <div className="text-7xl text-gray-400">🚀</div>
         )}
       </div>
 
-      <h3 className={`text-xl font-bold ${colorScheme.titleColor} mb-4`}>
+      <h3
+        className={`text-2xl font-bold ${colorScheme.titleColor} mb-6 group-hover:text-opacity-80 transition-all duration-300`}
+      >
         {project.title}
       </h3>
 
       <p
-        className={`${colorScheme.descColor} mb-4 text-sm leading-relaxed min-h-[4rem]`}
+        className={`${colorScheme.descColor} mb-6 text-base leading-relaxed min-h-[6rem] group-hover:text-opacity-90 transition-all duration-300`}
       >
         {project.description.split("\n").map((line, index) => (
           <span key={index}>
@@ -75,28 +68,28 @@ const ProjectCard = ({ project, colorScheme }: ProjectCardProps) => {
         ))}
       </p>
 
-      <div className="mb-4">
+      <div className="mb-8">
         {/* 첫 번째 줄 */}
-        <div className="flex flex-wrap gap-2 mb-2">
+        <div className="flex flex-wrap gap-3 mb-3">
           {project.technologies
             .slice(0, Math.ceil(project.technologies.length / 2))
             .map((tech, index) => (
               <span
                 key={index}
-                className={`${colorScheme.techBg} ${colorScheme.techText} px-2 py-1 rounded text-sm`}
+                className={`${colorScheme.techBg} ${colorScheme.techText} px-4 py-2 rounded-full text-sm font-medium shadow-sm hover:shadow-md transition-all duration-200 hover:scale-105`}
               >
                 {tech}
               </span>
             ))}
         </div>
         {/* 두 번째 줄 */}
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-3">
           {project.technologies
             .slice(Math.ceil(project.technologies.length / 2))
             .map((tech, index) => (
               <span
                 key={index + Math.ceil(project.technologies.length / 2)}
-                className={`${colorScheme.techBg} ${colorScheme.techText} px-2 py-1 rounded text-sm`}
+                className={`${colorScheme.techBg} ${colorScheme.techText} px-4 py-2 rounded-full text-sm font-medium shadow-sm hover:shadow-md transition-all duration-200 hover:scale-105`}
               >
                 {tech}
               </span>
@@ -104,11 +97,11 @@ const ProjectCard = ({ project, colorScheme }: ProjectCardProps) => {
         </div>
       </div>
 
-      <div className="flex gap-2">
+      <div className="flex gap-4 mt-auto">
         {project.liveUrl && (
           <button
             onClick={() => window.open(project.liveUrl, "_blank")}
-            className={`${colorScheme.buttonBg} text-white px-4 py-2 rounded-lg ${colorScheme.buttonHover} transition-colors cursor-pointer`}
+            className={`${colorScheme.buttonBg} text-white px-6 py-3 rounded-xl ${colorScheme.buttonHover} transition-all duration-300 cursor-pointer font-medium shadow-lg hover:shadow-xl hover:scale-105 flex-1 text-center`}
           >
             Live Demo
           </button>
@@ -116,7 +109,7 @@ const ProjectCard = ({ project, colorScheme }: ProjectCardProps) => {
         {project.githubUrl && (
           <button
             onClick={() => window.open(project.githubUrl, "_blank")}
-            className="bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-600 transition-colors cursor-pointer"
+            className="bg-gray-600 text-white px-6 py-3 rounded-xl hover:bg-gray-700 transition-all duration-300 cursor-pointer font-medium shadow-lg hover:shadow-xl hover:scale-105 flex-1 text-center"
           >
             GitHub
           </button>

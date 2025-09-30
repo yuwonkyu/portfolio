@@ -5,9 +5,8 @@ export const basicProjects: ProjectData[] = [
     id: "4u-openmind",
     title: "4U - 오픈마인드",
     description:
-      "코드잇 부트캠프 기초 프로젝트로 팀원 4명과 3주간 진행한 익명 질문 플랫폼입니다.\n메인 페이지 개발, 질문 모달 구현, 공통 컴포넌트 적용을 담당했습니다.",
-    icon: "💭",
-    imageUrl: "/project1.png", // 실제 이미지 경로
+      "첫 팀 프로젝트라 긴장했지만 4명이서 3주 동안 익명 질문 플랫폼을 만들었어요.\n메인 페이지랑 질문 모달을 만들면서 React 컴포넌트의 매력에 빠졌습니다.\n처음엔 CSS 때문에 밤새웠는데, 지금 보니 그때가 진짜 성장의 시작이었네요.",
+    imageUrl: "/project1.png",
     imageAlt:
       "4U 오픈마인드 프로젝트 - 익명 질문 플랫폼의 메인 페이지와 질문 모달 화면을 보여주는 웹사이트 스크린샷",
     technologies: [
@@ -28,9 +27,8 @@ export const intermediateProjects: ProjectData[] = [
     id: "intermediate-1",
     title: "SGS - 술 마시는 개발자 생활",
     description:
-      "코드잇 부트캠프 중급 프로젝트로 5인 팀에서 팀장을 맡아 약 3주간 진행했습니다.\n팀 환경 세팅, GitHub 레포지토리 구성, 프로필 페이지 구현, 공통 컴포넌트 제작을 담당했습니다.\nAccess/Refresh Token을 활용한 인증 시스템과 재사용 가능한 컴포넌트 아키텍처를 구현했습니다.",
-    icon: "🍻",
-    imageUrl: "/sgs-project.png", // 실제 이미지 경로
+      "팀장을 맡게 되어서 떨렸지만, 5명이서 술 리뷰 사이트를 만들어냈어요.\nGitHub 세팅부터 프로필 페이지까지 직접 구현하면서 팀 개발의 재미를 알았습니다.\n토큰 인증 구현할 때 삽질 좀 했지만, 그 덕분에 JWT를 제대로 이해하게 됐어요.",
+    imageUrl: "/sgs-project.png",
     imageAlt: "SGS 프로젝트 - 술 마시는 개발자 생활 웹사이트 스크린샷",
     technologies: [
       "Next.js",
@@ -51,8 +49,7 @@ export const advancedProjects: ProjectData[] = [
     id: "advanced-1",
     title: "Wazy (코드노마드) - 글로벌 노마드 플랫폼",
     description:
-      "코드잇 부트캠프 심화 프로젝트로 5인 팀에서 약 4주간 진행한 여행·체험 플랫폼입니다.\n체험 등록/수정 페이지와 공통 컴포넌트를 담당하여 에어비앤비와 유사한 기능을 구현했습니다.\nReact Hook Form + Zod를 활용한 유효성 검증과 Zustand 상태 관리를 도입했습니다.",
-    icon: "�",
+      "드디어 심화 프로젝트! 4주 동안 여행 플랫폼을 만들면서 진짜 개발자가 된 기분이었어요.\n체험 등록 페이지 만들 때 React Hook Form이랑 Zod 조합이 이렇게 좋은 기능인지 몰랐습니다.\n팀원들과 코드 리뷰하면서 '아, 이래서 협업이 중요하구나' 싶었던 프로젝트예요.",
     technologies: [
       "Next.js",
       "TypeScript",
