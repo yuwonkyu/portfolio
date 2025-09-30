@@ -43,7 +43,7 @@ const ProjectCard = ({ project, colorScheme }: ProjectCardProps) => {
           <img
             src={project.imageUrl}
             alt={project.imageAlt || `${project.title} 프로젝트 스크린샷`}
-            className="w-full h-full object-contain rounded-2xl transition-transform duration-300 group-hover:scale-105"
+            className="w-full h-full object-contain rounded-2xl"
             onError={handleImageError}
           />
         ) : (
