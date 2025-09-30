@@ -27,7 +27,7 @@ export const intermediateProjects: ProjectData[] = [
     id: "intermediate-1",
     title: "SGS - 술 마시는 개발자 생활",
     description:
-      "팀장을 맡게 되어서 떨렸지만, 5명이서 술 리뷰 사이트를 만들어냈어요.\nGitHub 세팅부터 프로필 페이지까지 직접 구현하면서 팀 개발의 재미를 알았습니다.\n토큰 인증 구현할 때 삽질 좀 했지만, 그 덕분에 JWT를 제대로 이해하게 됐어요.",
+      "팀장을 맡게 되어서 떨렸지만, 5명이서 술 리뷰 사이트를 만들어냈어요.\nGitHub 세팅부터 프로필 페이지까지 직접 구현하면서 팀 개발의 재미를 알았습니다.\n토큰 인증 구현할 때 이해를 못 했지만, 그 덕분에 JWT를 제대로 이해하게 됐어요.",
     imageUrl: "/sgs-project.png",
     imageAlt: "SGS 프로젝트 - 술 마시는 개발자 생활 웹사이트 스크린샷",
     technologies: [
