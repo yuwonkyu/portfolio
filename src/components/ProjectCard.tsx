@@ -41,14 +41,14 @@ const ProjectCard = ({ project, colorScheme }: ProjectCardProps) => {
       className={`bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl border ${colorScheme.border} hover:shadow-2xl transition-all duration-300 hover:scale-105`}
     >
       <div
-        className={`h-48 ${colorScheme.bg} rounded-xl mb-6 flex items-center justify-center overflow-hidden relative`}
+        className={`h-64 ${colorScheme.bg} rounded-xl mb-6 flex items-center justify-center overflow-hidden relative`}
       >
         {project.imageUrl ? (
           <>
             <img
               src={project.imageUrl}
               alt={project.imageAlt || `${project.title} 프로젝트 스크린샷`}
-              className="w-full h-full object-cover rounded-xl"
+              className="w-full h-full object-contain rounded-xl"
               onError={handleImageError}
             />
             <span className="fallback-icon text-6xl absolute hidden">
@@ -75,15 +75,33 @@ const ProjectCard = ({ project, colorScheme }: ProjectCardProps) => {
         ))}
       </p>
 
-      <div className="flex flex-wrap gap-2 mb-4">
-        {project.technologies.map((tech, index) => (
-          <span
-            key={index}
-            className={`${colorScheme.techBg} ${colorScheme.techText} px-2 py-1 rounded text-sm`}
-          >
-            {tech}
-          </span>
-        ))}
+      <div className="mb-4">
+        {/* 첫 번째 줄 */}
+        <div className="flex flex-wrap gap-2 mb-2">
+          {project.technologies
+            .slice(0, Math.ceil(project.technologies.length / 2))
+            .map((tech, index) => (
+              <span
+                key={index}
+                className={`${colorScheme.techBg} ${colorScheme.techText} px-2 py-1 rounded text-sm`}
+              >
+                {tech}
+              </span>
+            ))}
+        </div>
+        {/* 두 번째 줄 */}
+        <div className="flex flex-wrap gap-2">
+          {project.technologies
+            .slice(Math.ceil(project.technologies.length / 2))
+            .map((tech, index) => (
+              <span
+                key={index + Math.ceil(project.technologies.length / 2)}
+                className={`${colorScheme.techBg} ${colorScheme.techText} px-2 py-1 rounded text-sm`}
+              >
+                {tech}
+              </span>
+            ))}
+        </div>
       </div>
 
       <div className="flex gap-2">

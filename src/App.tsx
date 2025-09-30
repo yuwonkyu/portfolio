@@ -14,7 +14,7 @@ function App() {
     <div className="min-h-screen">
       <Header />
 
-      <IntroSection />
+      <IntroSection avatar="/me.jpg" />
 
       <ProjectSection
         id="basic"

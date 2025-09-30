@@ -25,8 +25,16 @@ const IntroSection = ({
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="text-center">
           {/* Avatar */}
-          <div className="w-40 h-40 bg-gradient-to-br from-purple-200 to-pink-200 rounded-full border-4 border-purple-300 shadow-xl mx-auto flex items-center justify-center text-7xl mb-8">
-            {avatar}
+          <div className="w-40 h-40 bg-gradient-to-br from-purple-200 to-pink-200 rounded-full border-4 border-purple-300 shadow-xl mx-auto flex items-center justify-center text-7xl mb-8 overflow-hidden">
+            {avatar.startsWith("/") || avatar.startsWith("http") ? (
+              <img
+                src={avatar}
+                alt="프로필 사진"
+                className="w-full h-full object-cover rounded-full"
+              />
+            ) : (
+              <span>{avatar}</span>
+            )}
           </div>
 
           {/* Title */}
