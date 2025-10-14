@@ -87,7 +87,7 @@ export const personalProjects: ProjectData[] = [
     ],
     liveUrl: "https://make-character-v2.vercel.app/",
     githubUrl: "https://github.com/yuwonkyu/makeCharacter",
-    imageUrl: "/mini-project.png.png",
+    imageUrl: "/mini-project.png",
     imageAlt:
       "Make Character 프로젝트 - 게임 캐릭터 커스터마이징 웹사이트 스크린샷",
   },
