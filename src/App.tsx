@@ -2,6 +2,7 @@
 import Header from "./components/Header";
 import IntroSection from "./components/IntroSection";
 import ProjectSection from "./components/ProjectSection";
+import Footer from "./components/Footer";
 import {
   basicProjects,
   intermediateProjects,
@@ -48,6 +49,8 @@ function App() {
         projects={personalProjects}
         colorScheme={colorSchemes.orange}
       />
+
+      <Footer />
     </div>
   );
 }
