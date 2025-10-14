@@ -41,6 +41,12 @@ const Header = ({
       colorScheme: "bg-purple-100 hover:bg-purple-200 text-purple-700",
     },
     {
+      id: "personal",
+      label: "개인",
+      href: "#personal",
+      colorScheme: "bg-orange-100 hover:bg-orange-200 text-orange-700",
+    },
+    {
       id: "contact",
       label: "연락",
       href: "#contact",

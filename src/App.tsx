@@ -6,6 +6,7 @@ import {
   basicProjects,
   intermediateProjects,
   advancedProjects,
+  personalProjects,
   colorSchemes,
 } from "./data/projectsData";
 
@@ -38,6 +39,14 @@ function App() {
         bgGradient="bg-gradient-to-br from-purple-100 via-violet-50 to-fuchsia-50"
         projects={advancedProjects}
         colorScheme={colorSchemes.purple}
+      />
+
+      <ProjectSection
+        id="personal"
+        title="🎮 개인 프로젝트"
+        bgGradient="bg-gradient-to-br from-orange-100 via-amber-50 to-yellow-50"
+        projects={personalProjects}
+        colorScheme={colorSchemes.orange}
       />
     </div>
   );

@@ -70,6 +70,29 @@ export const advancedProjects: ProjectData[] = [
   },
 ];
 
+export const personalProjects: ProjectData[] = [
+  {
+    id: "personal-1",
+    title: "Make Character - 나의 캐릭터 커스터마이징",
+    description:
+      "게임 캐릭터 커스터마이징을 웹에서 구현하고 싶어서 만든 개인 프로젝트예요.\n테일즈위버 테마로 한/일/영 다국어 지원과 실시간 캐릭터 커스터마이징을 구현했습니다.\n혼자 작업하는 것의 어려움을 느끼면서도, Figma 디자인부터 픽셀 아트까지 직접 해보며 많이 배웠어요.",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Zustand",
+      "Vercel",
+      "Figma",
+      "LibreSprite",
+    ],
+    liveUrl: "https://make-character-v2.vercel.app/",
+    githubUrl: "https://github.com/yuwonkyu/makeCharacter",
+    imageUrl: "/character-project.png",
+    imageAlt:
+      "Make Character 프로젝트 - 게임 캐릭터 커스터마이징 웹사이트 스크린샷",
+  },
+];
+
 export const colorSchemes = {
   green: {
     bg: "bg-green-100",
@@ -100,5 +123,15 @@ export const colorSchemes = {
     techText: "text-purple-700",
     buttonBg: "bg-purple-500",
     buttonHover: "hover:bg-purple-600",
+  },
+  orange: {
+    bg: "bg-orange-100",
+    border: "border-orange-200",
+    titleColor: "text-orange-800",
+    descColor: "text-orange-700",
+    techBg: "bg-orange-100",
+    techText: "text-orange-700",
+    buttonBg: "bg-orange-500",
+    buttonHover: "hover:bg-orange-600",
   },
 };
