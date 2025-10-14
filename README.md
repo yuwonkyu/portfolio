@@ -35,6 +35,14 @@
 - **기술**: Next.js, TypeScript, Zustand, React Hook Form, Zod, Tailwind CSS
 - **배포**: [Live Demo](https://codenomad-8itj.vercel.app/) | [GitHub](https://github.com/codeNomad-FE/wazy)
 
+### 🎮 Make Character - 나의 캐릭터 커스터마이징 (개인 프로젝트)
+
+- **기간**: 2025.08 ~ 2025.09 (1개월)
+- **역할**: 전체 기획, 디자인, 개발 (개인 프로젝트)
+- **성과**: 게임 캐릭터 커스터마이징 웹 서비스, 한/일/영 다국어 지원
+- **기술**: Next.js, TypeScript, Tailwind CSS, Zustand, Figma, LibreSprite
+- **배포**: [Live Demo](https://make-character-v2.vercel.app/) | [GitHub](https://github.com/yuwonkyu/makeCharacter)
+
 ## 🛠 Tech Stack
 
 ### Frontend & Styling
@@ -60,6 +68,7 @@
 ### Design & Collaboration
 
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
+![LibreSprite](https://img.shields.io/badge/LibreSprite-4B8BBE?style=flat-square&logo=pixelart&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
 
@@ -71,7 +80,8 @@ portfolio/
 │   ├── me.jpg             # Profile image
 │   ├── project1.png       # 4U project screenshot
 │   ├── sgs-project.png    # SGS project screenshot
-│   └── wazy-project.png   # Wazy project screenshot
+│   ├── wazy-project.png   # Wazy project screenshot
+│   └── character-project.png # Make Character project screenshot
 ├── src/
 │   ├── components/        # Reusable components
 │   │   ├── Header.tsx     # Navigation header
@@ -126,10 +136,11 @@ pnpm preview
 
 ### 📈 성장 지표
 
-- **프로젝트 완료**: 3개 (기초 → 중급 → 심화)
+- **프로젝트 완료**: 4개 (기초 → 중급 → 심화 → 개인)
 - **팀 프로젝트 경험**: 5인 팀 리더 경험
+- **개인 프로젝트**: 기획부터 디자인, 개발까지 전체 사이클 경험
 - **기술 스택 확장**: JavaScript → TypeScript, React → Next.js
-- **협업 도구 활용**: GitHub, Figma, CodeRabbit
+- **협업 도구 활용**: GitHub, Figma, CodeRabbit, LibreSprite
 
 ### 🎯 주요 성취
 
@@ -137,6 +148,7 @@ pnpm preview
 2. **상태 관리**: JWT 인증, Zustand를 활용한 클라이언트 상태 관리
 3. **폼 검증**: React Hook Form + Zod 조합으로 견고한 폼 시스템
 4. **팀 리더십**: 개발 환경 세팅, 코드 리뷰, 일정 관리 경험
+5. **개인 프로젝트**: 기획·디자인·개발 전체 사이클 경험, 다국어 지원 시스템 구현
 
 ## 📞 Contact
 
