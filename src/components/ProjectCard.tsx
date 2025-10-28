@@ -58,7 +58,7 @@ const ProjectCard = ({ project, colorScheme }: ProjectCardProps) => {
       </h3>
 
       <p
-        className={`${colorScheme.descColor} mb-6 text-base leading-relaxed min-h-[6rem] group-hover:text-opacity-90 transition-all duration-300`}
+        className={`${colorScheme.descColor} mb-6 text-base leading-relaxed min-h-24 group-hover:text-opacity-90 transition-all duration-300`}
       >
         {project.description.split("\n").map((line, index) => (
           <span key={index}>

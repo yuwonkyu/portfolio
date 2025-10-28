@@ -72,12 +72,12 @@ const Header = ({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo & Title */}
-          <h1 className="font-bold text-purple-600 text-lg">
+          <h1 className="font-bold text-purple-600 text-sm sm:text-lg">
             {logo} {title}
           </h1>
 
           {/* Navigation */}
-          <nav className="space-x-4 flex">
+          <nav className="space-x-4 flex items-center">
             {navItems.map((item) => (
               <a
                 key={item.id}
@@ -86,7 +86,7 @@ const Header = ({
                   e.preventDefault();
                   handleNavClick(item.href);
                 }}
-                className={`${item.colorScheme} px-3 py-1 rounded-full text-sm transition-all duration-200`}
+                className={`${item.colorScheme} flex items-center justify-center px-3 py-1 rounded-full text-sm transition-all duration-200 text-center`}
               >
                 {item.label}
               </a>

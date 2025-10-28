@@ -6,12 +6,12 @@ const Footer = ({ className = "" }: FooterProps) => {
   return (
     <footer
       id="contact"
-      className={`bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900 text-white py-16 ${className}`}
+      className={`bg-linear-to-br from-gray-900 via-slate-800 to-gray-900 text-white py-16 ${className}`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           {/* Header */}
-          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold mb-4 bg-linear-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
             연락하기
           </h2>
           <p className="text-gray-300 text-lg mb-12 max-w-2xl mx-auto">
@@ -36,7 +36,13 @@ const Footer = ({ className = "" }: FooterProps) => {
 
             {/* GitHub */}
             <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/10 transition-all duration-300 hover:scale-105">
-              <div className="text-4xl mb-4">🐙</div>
+              <div className="mb-4 flex justify-center">
+                <img
+                  src="/github-icon.svg"
+                  alt="GitHub"
+                  className="w-10 h-10"
+                />
+              </div>
               <h3 className="text-xl font-semibold mb-2">GitHub</h3>
               <a
                 href="https://github.com/yuwonkyu"
