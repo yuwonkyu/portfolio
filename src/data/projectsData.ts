@@ -91,6 +91,17 @@ export const personalProjects: ProjectData[] = [
     imageAlt:
       "Make Character 프로젝트 - 게임 캐릭터 커스터마이징 웹사이트 스크린샷",
   },
+  {
+    id: "personal-2",
+    title: "Portfolio - 개발자 포트폴리오 웹사이트",
+    description:
+      "나의 성장 과정과 프로젝트들을 보여주고 싶어서 만든 포트폴리오 사이트예요.\nReact와 TypeScript로 컴포넌트 기반 개발을 하면서 재사용성을 고려했습니다.\nTailwind CSS로 반응형 디자인을 구현하고, Vite로 빠른 개발 환경을 구축했어요.",
+    technologies: ["React", "TypeScript", "Vite", "Tailwind CSS", "Vercel"],
+    liveUrl: "https://portfolio-wonkyu.vercel.app/",
+    githubUrl: "https://github.com/yuwonkyu/portfolio",
+    imageUrl: "/portfolio-project.png",
+    imageAlt: "Portfolio 프로젝트 - 개발자 포트폴리오 웹사이트 스크린샷",
+  },
 ];
 
 export const colorSchemes = {
