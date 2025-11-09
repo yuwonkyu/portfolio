@@ -19,19 +19,11 @@ function App() {
       <IntroSection avatar="/me.jpg" />
 
       <ProjectSection
-        id="basic"
-        title="🌱 기초 프로젝트"
-        bgGradient="bg-gradient-to-br from-green-100 via-emerald-50 to-teal-50"
-        projects={basicProjects}
-        colorScheme={colorSchemes.green}
-      />
-
-      <ProjectSection
-        id="intermediate"
-        title="⚡ 중급 프로젝트"
-        bgGradient="bg-gradient-to-br from-blue-100 via-sky-50 to-cyan-50"
-        projects={intermediateProjects}
-        colorScheme={colorSchemes.blue}
+        id="personal"
+        title="🎮 개인 프로젝트"
+        bgGradient="bg-gradient-to-br from-orange-100 via-amber-50 to-yellow-50"
+        projects={personalProjects}
+        colorScheme={colorSchemes.orange}
       />
 
       <ProjectSection
@@ -43,11 +35,19 @@ function App() {
       />
 
       <ProjectSection
-        id="personal"
-        title="🎮 개인 프로젝트"
-        bgGradient="bg-gradient-to-br from-orange-100 via-amber-50 to-yellow-50"
-        projects={personalProjects}
-        colorScheme={colorSchemes.orange}
+        id="intermediate"
+        title="⚡ 중급 프로젝트"
+        bgGradient="bg-gradient-to-br from-blue-100 via-sky-50 to-cyan-50"
+        projects={intermediateProjects}
+        colorScheme={colorSchemes.blue}
+      />
+
+      <ProjectSection
+        id="basic"
+        title="🌱 기초 프로젝트"
+        bgGradient="bg-gradient-to-br from-green-100 via-emerald-50 to-teal-50"
+        projects={basicProjects}
+        colorScheme={colorSchemes.green}
       />
 
       <Footer />
