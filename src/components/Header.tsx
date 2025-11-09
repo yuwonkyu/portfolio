@@ -23,16 +23,10 @@ const Header = ({
       colorScheme: "bg-purple-100 hover:bg-purple-200 text-purple-700",
     },
     {
-      id: "basic",
-      label: "기초",
-      href: "#basic",
-      colorScheme: "bg-green-100 hover:bg-green-200 text-green-700",
-    },
-    {
-      id: "intermediate",
-      label: "중급",
-      href: "#intermediate",
-      colorScheme: "bg-blue-100 hover:bg-blue-200 text-blue-700",
+      id: "personal",
+      label: "개인",
+      href: "#personal",
+      colorScheme: "bg-orange-100 hover:bg-orange-200 text-orange-700",
     },
     {
       id: "advanced",
@@ -41,10 +35,16 @@ const Header = ({
       colorScheme: "bg-purple-100 hover:bg-purple-200 text-purple-700",
     },
     {
-      id: "personal",
-      label: "개인",
-      href: "#personal",
-      colorScheme: "bg-orange-100 hover:bg-orange-200 text-orange-700",
+      id: "intermediate",
+      label: "중급",
+      href: "#intermediate",
+      colorScheme: "bg-blue-100 hover:bg-blue-200 text-blue-700",
+    },
+    {
+      id: "basic",
+      label: "기초",
+      href: "#basic",
+      colorScheme: "bg-green-100 hover:bg-green-200 text-green-700",
     },
     {
       id: "contact",
