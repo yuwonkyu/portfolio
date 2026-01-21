@@ -72,6 +72,29 @@ export const advancedProjects: ProjectData[] = [
 
 export const personalProjects: ProjectData[] = [
   {
+    id: "realweather-app",
+    title: "RealWeather - 실시간 날씨 앱",
+    description:
+      "실시간 날씨 정보와 즐겨찾기 관리를 제공하는 반응형 웹 애플리케이션이에요.\nTanStack Query로 서버 상태를 효율적으로 관리하고, Zustand로 클라이언트 상태를 처리했습니다.\nKakao Maps API와 OpenWeather API를 연동하면서 외부 API 통합의 재미를 느꼈어요.",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "TanStack Query",
+      "Zustand",
+      "React Router",
+      "Tailwind CSS",
+      "framer-motion",
+      "Kakao Maps API",
+      "OpenWeather API",
+    ],
+    liveUrl: "https://realweather-frontend.vercel.app/",
+    githubUrl: "https://github.com/yuwonkyu/realweather-frontend",
+    imageUrl: "/realweather-project.png",
+    imageAlt:
+      "RealWeather 프로젝트 - 실시간 날씨 정보 웹 애플리케이션 스크린샷",
+  },
+  {
     id: "personal-1",
     title: "Make Character - 나의 캐릭터 커스터마이징",
     description:

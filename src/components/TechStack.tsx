@@ -23,6 +23,7 @@ const TechStack = ({ className = "" }: TechStackProps) => {
       techs: [
         { name: "Tailwind CSS", color: "bg-cyan-200 text-cyan-800" },
         { name: "MUI", color: "bg-indigo-200 text-indigo-800" },
+        { name: "framer-motion", color: "bg-pink-300 text-pink-900" },
         { name: "Figma", color: "bg-purple-300 text-purple-900" },
       ],
     },
@@ -30,6 +31,7 @@ const TechStack = ({ className = "" }: TechStackProps) => {
       title: "State & Forms",
       techs: [
         { name: "Zustand", color: "bg-green-200 text-green-800" },
+        { name: "TanStack Query", color: "bg-red-300 text-red-900" },
         { name: "React Hook Form", color: "bg-pink-200 text-pink-800" },
       ],
     },
