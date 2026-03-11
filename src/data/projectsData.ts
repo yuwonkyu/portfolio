@@ -129,7 +129,7 @@ export const personalProjects: ProjectData[] = [
     id: "template-gallery",
     title: "TemplateGallery - 포트폴리오 템플릿 에디터",
     description:
-      "코드 없이도 포트폴리오를 쉽게 만들고, 내가 소유하는 HTML/PDF로 내보낼 수 있는 노코드 에디터예요.\n로컬 중심 워크플로우를 기반으로 템플릿 편집부터 미리보기, 내보내기까지 한 번에 진행할 수 있습니다.\nREADME를 중심으로 기능 구조를 정리하고 UX 흐름을 다듬으며 실제 배포까지 마무리했습니다.",
+      "코드 없이도 포트폴리오를 쉽게 만들고, 내가 소유하는 HTML/PDF로 내보낼 수 있는 노코드 에디터예요.\n로컬 중심 워크플로우를 기반으로 템플릿 편집부터 미리보기, 내보내기까지 한 번에 진행할 수 있습니다.",
     technologies: [
       "Next.js 15",
       "TypeScript 5",
@@ -145,6 +145,24 @@ export const personalProjects: ProjectData[] = [
     imageUrl: "/TemplateGallery.png",
     imageAlt:
       "TemplateGallery 프로젝트 - 포트폴리오 템플릿 에디터 웹페이지 스크린샷",
+  },
+  {
+    id: "project-sitedraw",
+    title: "Project SiteDraw - 건설 도면 뷰어",
+    description:
+      "건설 현장 도면을 구조적으로 탐색하고 리비전 이력을 빠르게 파악할 수 있는 웹 기반 도면 뷰어예요.\n구직 중 면접 과제로 진행했으며, 실제 고객의 사용 흐름을 고려해 탐색 구조와 정보 배치를 설계했습니다.\n확장 가능한 유지보수를 위해 FSD(Feature-Sliced Design) 기반 파일/코드 구조로 설계한 프로젝트입니다.",
+    technologies: [
+      "Next.js 16 (App Router)",
+      "TypeScript (Strict)",
+      "React 19",
+      "Tailwind CSS 4",
+      "FSD Architecture",
+    ],
+    liveUrl: "https://project-site-draw.vercel.app",
+    githubUrl: "https://github.com/yuwonkyu/Project_SiteDraw",
+    imageUrl: "/project-sitedraw.png",
+    imageAlt:
+      "Project SiteDraw 프로젝트 - 건설 현장 도면 탐색 및 리비전 이력 확인 웹 뷰어 스크린샷",
   },
 ];
 
