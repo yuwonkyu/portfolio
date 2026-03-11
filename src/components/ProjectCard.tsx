@@ -1,3 +1,5 @@
+import { memo, useMemo, useState } from "react";
+
 export interface ProjectData {
   id: string;
   title: string;
@@ -24,27 +26,31 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = ({ project, colorScheme }: ProjectCardProps) => {
-  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
-    e.currentTarget.style.display = "none";
-    const parent = e.currentTarget.parentElement;
-    if (parent) {
-      parent.innerHTML = '<div class="text-7xl text-gray-400">🚀</div>';
-    }
+  const [isImageHidden, setIsImageHidden] = useState(false);
+  const descriptionLines = useMemo(
+    () => project.description.split("\n"),
+    [project.description],
+  );
+
+  const handleImageError = () => {
+    setIsImageHidden(true);
   };
 
   return (
     <div
-      className={`bg-white/90 backdrop-blur-md rounded-3xl p-10 shadow-2xl border-2 ${colorScheme.border} hover:shadow-3xl transition-all duration-500 hover:scale-102 hover:-translate-y-2 group min-h-[600px]`}
+      className={`bg-white/90 backdrop-blur-md rounded-3xl p-5 sm:p-10 shadow-2xl border-2 ${colorScheme.border}`}
     >
       <div
-        className={`h-80 ${colorScheme.bg} rounded-2xl mb-8 flex items-center justify-center overflow-hidden relative shadow-lg group-hover:shadow-xl transition-shadow duration-300`}
+        className={`h-48 sm:h-80 ${colorScheme.bg} rounded-2xl mb-4 sm:mb-8 flex items-center justify-center overflow-hidden relative shadow-lg`}
       >
-        {project.imageUrl ? (
+        {project.imageUrl && !isImageHidden ? (
           <img
             src={project.imageUrl}
             alt={project.imageAlt || `${project.title} 프로젝트 스크린샷`}
             className="w-full h-full object-contain rounded-2xl"
             onError={handleImageError}
+            loading="lazy"
+            decoding="async"
           />
         ) : (
           <div className="text-7xl text-gray-400">🚀</div>
@@ -52,56 +58,40 @@ const ProjectCard = ({ project, colorScheme }: ProjectCardProps) => {
       </div>
 
       <h3
-        className={`text-2xl font-bold ${colorScheme.titleColor} mb-6 group-hover:text-opacity-80 transition-all duration-300`}
+        className={`text-lg sm:text-2xl font-bold ${colorScheme.titleColor} mb-3 sm:mb-6`}
       >
         {project.title}
       </h3>
 
       <p
-        className={`${colorScheme.descColor} mb-6 text-base leading-relaxed min-h-24 group-hover:text-opacity-90 transition-all duration-300`}
+        className={`${colorScheme.descColor} mb-3 sm:mb-6 text-sm sm:text-base leading-relaxed`}
       >
-        {project.description.split("\n").map((line, index) => (
+        {descriptionLines.map((line, index) => (
           <span key={index}>
             {line}
-            {index < project.description.split("\n").length - 1 && <br />}
+            {index < descriptionLines.length - 1 && <br />}
           </span>
         ))}
       </p>
 
-      <div className="mb-8">
-        {/* 첫 번째 줄 */}
-        <div className="flex flex-wrap gap-3 mb-3">
-          {project.technologies
-            .slice(0, Math.ceil(project.technologies.length / 2))
-            .map((tech, index) => (
-              <span
-                key={index}
-                className={`${colorScheme.techBg} ${colorScheme.techText} px-4 py-2 rounded-full text-sm font-medium shadow-sm hover:shadow-md transition-all duration-200 hover:scale-105`}
-              >
-                {tech}
-              </span>
-            ))}
-        </div>
-        {/* 두 번째 줄 */}
-        <div className="flex flex-wrap gap-3">
-          {project.technologies
-            .slice(Math.ceil(project.technologies.length / 2))
-            .map((tech, index) => (
-              <span
-                key={index + Math.ceil(project.technologies.length / 2)}
-                className={`${colorScheme.techBg} ${colorScheme.techText} px-4 py-2 rounded-full text-sm font-medium shadow-sm hover:shadow-md transition-all duration-200 hover:scale-105`}
-              >
-                {tech}
-              </span>
-            ))}
+      <div className="mb-4 sm:mb-8">
+        <div className="flex flex-wrap gap-1.5 sm:gap-3">
+          {project.technologies.map((tech, index) => (
+            <span
+              key={`${tech}-${index}`}
+              className={`${colorScheme.techBg} ${colorScheme.techText} px-2 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-medium shadow-sm`}
+            >
+              {tech}
+            </span>
+          ))}
         </div>
       </div>
 
-      <div className="flex gap-4 mt-auto">
+      <div className="flex gap-3 mt-auto">
         {project.liveUrl && (
           <button
             onClick={() => window.open(project.liveUrl, "_blank")}
-            className={`${colorScheme.buttonBg} text-white px-6 py-3 rounded-xl ${colorScheme.buttonHover} transition-all duration-300 cursor-pointer font-medium shadow-lg hover:shadow-xl hover:scale-105 flex-1 text-center`}
+            className={`${colorScheme.buttonBg} text-white px-4 py-2 sm:px-6 sm:py-3 rounded-xl ${colorScheme.buttonHover} cursor-pointer font-medium shadow-lg flex-1 text-center text-sm sm:text-base`}
           >
             Live Demo
           </button>
@@ -109,7 +99,7 @@ const ProjectCard = ({ project, colorScheme }: ProjectCardProps) => {
         {project.githubUrl && (
           <button
             onClick={() => window.open(project.githubUrl, "_blank")}
-            className="bg-gray-600 text-white px-6 py-3 rounded-xl hover:bg-gray-700 transition-all duration-300 cursor-pointer font-medium shadow-lg hover:shadow-xl hover:scale-105 flex-1 text-center"
+            className="bg-gray-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-xl hover:bg-gray-700 cursor-pointer font-medium shadow-lg flex-1 text-center text-sm sm:text-base"
           >
             GitHub
           </button>
@@ -119,4 +109,4 @@ const ProjectCard = ({ project, colorScheme }: ProjectCardProps) => {
   );
 };
 
-export default ProjectCard;
+export default memo(ProjectCard);

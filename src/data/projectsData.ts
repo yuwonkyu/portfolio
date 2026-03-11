@@ -125,9 +125,40 @@ export const personalProjects: ProjectData[] = [
     imageUrl: "/portfolio-project.png",
     imageAlt: "Portfolio 프로젝트 - 개발자 포트폴리오 웹사이트 스크린샷",
   },
+  {
+    id: "template-gallery",
+    title: "TemplateGallery - 포트폴리오 템플릿 에디터",
+    description:
+      "코드 없이도 포트폴리오를 쉽게 만들고, 내가 소유하는 HTML/PDF로 내보낼 수 있는 노코드 에디터예요.\n로컬 중심 워크플로우를 기반으로 템플릿 편집부터 미리보기, 내보내기까지 한 번에 진행할 수 있습니다.\nREADME를 중심으로 기능 구조를 정리하고 UX 흐름을 다듬으며 실제 배포까지 마무리했습니다.",
+    technologies: [
+      "Next.js 15",
+      "TypeScript 5",
+      "Tailwind CSS 4",
+      "Zustand",
+      "next-intl",
+      "html2pdf.js",
+      "Zod",
+      "pnpm",
+    ],
+    liveUrl: "https://template-gallery-two.vercel.app/",
+    githubUrl: "https://github.com/yuwonkyu/TemplateGallery",
+    imageUrl: "/TemplateGallery.png",
+    imageAlt:
+      "TemplateGallery 프로젝트 - 포트폴리오 템플릿 에디터 웹페이지 스크린샷",
+  },
 ];
 
 export const colorSchemes = {
+  ocean: {
+    bg: "bg-slate-50",
+    border: "border-slate-200",
+    titleColor: "text-slate-800",
+    descColor: "text-gray-600",
+    techBg: "bg-slate-100",
+    techText: "text-slate-700",
+    buttonBg: "bg-slate-600",
+    buttonHover: "hover:bg-slate-700",
+  },
   green: {
     bg: "bg-green-100",
     border: "border-green-200",
