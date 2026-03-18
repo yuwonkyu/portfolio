@@ -43,6 +43,27 @@
 - **기술**: Next.js, TypeScript, Tailwind CSS, Zustand, Figma, LibreSprite
 - **배포**: [Live Demo](https://make-character-v2.vercel.app/) | [GitHub](https://github.com/yuwonkyu/makeCharacter)
 
+### 📋 TemplateGallery - 포트폴리오 템플릿 에디터 (개인 프로젝트)
+
+- **역할**: 전체 기획, 디자인, 개발 (개인 프로젝트)
+- **성과**: 코드 없이 포트폴리오를 편집하고 HTML/PDF로 내보내는 노코드 에디터 구현, 다국어(i18n) 지원
+- **기술**: Next.js 15, TypeScript 5, Tailwind CSS 4, Zustand, next-intl, html2pdf.js, Zod
+- **배포**: [Live Demo](https://template-gallery-two.vercel.app/) | [GitHub](https://github.com/yuwonkyu/TemplateGallery)
+
+### 🏗 Project SiteDraw - 건설 도면 뷰어 (개인 프로젝트)
+
+- **역할**: 전체 기획, 디자인, 개발 (면접 과제 → 개인 프로젝트)
+- **성과**: 건설 현장 도면 탐색 및 리비전 이력 확인 웹 뷰어, FSD(Feature-Sliced Design) 아키텍처 적용
+- **기술**: Next.js 16 (App Router), Turbopack, TypeScript (Strict), React 19, Tailwind CSS 4
+- **배포**: [Live Demo](https://project-site-draw.vercel.app) | [GitHub](https://github.com/yuwonkyu/Project_SiteDraw)
+
+### 🌤 RealWeather - 실시간 날씨 앱 (개인 프로젝트)
+
+- **역할**: 전체 기획, 디자인, 개발 (개인 프로젝트)
+- **성과**: Kakao Maps API + OpenWeather API 연동, TanStack Query로 서버 상태 관리, framer-motion 애니메이션 구현
+- **기술**: React, TypeScript, Vite, TanStack Query, Zustand, React Router, Tailwind CSS, framer-motion
+- **배포**: [Live Demo](https://realweather-frontend.vercel.app/) | [GitHub](https://github.com/yuwonkyu/realweather-frontend)
+
 ## 🛠 Tech Stack
 
 ### Frontend & Styling
@@ -56,8 +77,14 @@
 ### State & Forms
 
 ![Zustand](https://img.shields.io/badge/Zustand-000000?style=flat-square&logo=zustand&logoColor=white)
+![TanStack Query](https://img.shields.io/badge/TanStack_Query-FF4154?style=flat-square&logo=reactquery&logoColor=white)
 ![React Hook Form](https://img.shields.io/badge/React_Hook_Form-EC5990?style=flat-square&logo=reacthookform&logoColor=white)
 ![Zod](https://img.shields.io/badge/Zod-3E67B1?style=flat-square&logo=zod&logoColor=white)
+
+### Styling & UI
+
+![MUI](https://img.shields.io/badge/MUI-007FFF?style=flat-square&logo=mui&logoColor=white)
+![framer--motion](https://img.shields.io/badge/framer--motion-EF008F?style=flat-square&logo=framer&logoColor=white)
 
 ### Dev Tools
 
@@ -72,28 +99,30 @@
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
 
+### AI Tools
+
+![GitHub Copilot](https://img.shields.io/badge/GitHub_Copilot-000000?style=flat-square&logo=github&logoColor=white)
+![CodeRabbit](https://img.shields.io/badge/CodeRabbit-10B981?style=flat-square&logo=rabbit&logoColor=white)
+
 ## 🏗 Project Structure
 
 ```
 portfolio/
-├── public/                 # Static assets
-│   ├── me.jpg             # Profile image
-│   ├── project1.png       # 4U project screenshot
-│   ├── sgs-project.png    # SGS project screenshot
-│   ├── wazy-project.png   # Wazy project screenshot
-│   └── character-project.png # Make Character project screenshot
+├── public/
+│   └── images/            # Project screenshots & assets
 ├── src/
-│   ├── components/        # Reusable components
-│   │   ├── Header.tsx     # Navigation header
-│   │   ├── IntroSection.tsx   # Hero section with profile
-│   │   ├── ProjectSection.tsx # Project showcase section
-│   │   ├── ProjectCard.tsx    # Individual project card
-│   │   └── TechStack.tsx      # Technology stack display
+│   ├── components/
+│   │   ├── Header.tsx         # 네비게이션 헤더
+│   │   ├── Footer.tsx         # 푸터
+│   │   ├── IntroSection.tsx   # 히어로 섹션 (프로필)
+│   │   ├── ProjectSection.tsx # 프로젝트 쇼케이스 섹션
+│   │   ├── ProjectCard.tsx    # 개별 프로젝트 카드
+│   │   └── TechStack.tsx      # 기술 스택 디스플레이
 │   ├── data/
-│   │   └── projectsData.ts    # Project data and configurations
-│   ├── App.tsx            # Main application component
-│   └── main.tsx           # Application entry point
-└── package.json           # Dependencies and scripts
+│   │   └── projectsData.ts    # 프로젝트 데이터 및 설정
+│   ├── App.tsx            # 메인 애플리케이션 컴포넌트
+│   └── main.tsx           # 애플리케이션 진입점
+└── package.json
 ```
 
 ## 🚀 Getting Started
@@ -136,27 +165,32 @@ pnpm preview
 
 ### 📈 성장 지표
 
-- **프로젝트 완료**: 4개 (기초 → 중급 → 심화 → 개인)
+- **프로젝트 완료**: 8개 (기초 → 중급 → 심화 → 개인 5개)
 - **팀 프로젝트 경험**: 5인 팀 리더 경험
-- **개인 프로젝트**: 기획부터 디자인, 개발까지 전체 사이클 경험
-- **기술 스택 확장**: JavaScript → TypeScript, React → Next.js
-- **협업 도구 활용**: GitHub, Figma, CodeRabbit, LibreSprite
+- **개인 프로젝트**: 기획부터 디자인, 개발까지 전체 사이클 경험 (5개)
+- **기술 스택 확장**: JavaScript → TypeScript, React → Next.js, TanStack Query 도입
+- **협업/AI 도구 활용**: GitHub, Figma, GitHub Copilot, CodeRabbit, LibreSprite
 
 ### 🎯 주요 성취
 
 1. **컴포넌트 설계**: 재사용 가능한 컴포넌트 아키텍처 구현
-2. **상태 관리**: JWT 인증, Zustand를 활용한 클라이언트 상태 관리
+2. **상태 관리**: JWT 인증, Zustand + TanStack Query를 활용한 클라이언트/서버 상태 관리
 3. **폼 검증**: React Hook Form + Zod 조합으로 견고한 폼 시스템
 4. **팀 리더십**: 개발 환경 세팅, 코드 리뷰, 일정 관리 경험
-5. **개인 프로젝트**: 기획·디자인·개발 전체 사이클 경험, 다국어 지원 시스템 구현
+5. **개인 프로젝트**: 기획·디자인·개발 전체 사이클 경험, 다국어 지원·노코드 에디터·FSD 아키텍처 등 다양한 시도
+6. **AI 도구 활용**: GitHub Copilot·CodeRabbit을 활용한 코드 품질 향상
 
 ## 📞 Contact
 
 - **Email**: [이메일주소](duck01777@naver.com)
 - **GitHub**: [@yuwonkyu](https://github.com/yuwonkyu)
-- **Portfolio**: [Live Demo](https://your-portfolio-url.com)
+- **Portfolio**: [Live Demo](https://portfolio-wonkyu.vercel.app/)
 
 ---
 
 > **"늦둥이지만 풍부한 경험과 뛰어난 책임감으로 프로젝트에 임합니다."**  
 > 함께 성장할 수 있는 기회를 기대합니다! 🚀
+
+---
+
+_Last updated: 2026-03-19_
