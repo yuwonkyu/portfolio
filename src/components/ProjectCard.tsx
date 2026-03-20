@@ -47,10 +47,11 @@ const ProjectCard = ({ project, colorScheme }: ProjectCardProps) => {
           <img
             src={project.imageUrl}
             alt={project.imageAlt || `${project.title} 프로젝트 스크린샷`}
-            className="w-full h-full object-contain rounded-2xl"
+            className="w-full h-full object-contain rounded-2xl pointer-events-none select-none"
             onError={handleImageError}
             loading="lazy"
             decoding="async"
+            draggable={false}
           />
         ) : (
           <div className="text-7xl text-gray-400">🚀</div>

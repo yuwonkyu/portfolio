@@ -178,6 +178,10 @@ const ProjectSection = ({
     draggedRef.current = false;
   };
 
+  const handleDragStart = (event: React.DragEvent<HTMLDivElement>) => {
+    event.preventDefault();
+  };
+
   return (
     <section id={id} className={`min-h-screen ${bgGradient} flex items-center`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12 sm:py-20">
@@ -207,8 +211,9 @@ const ProjectSection = ({
               onTouchMove={handleTouchMove}
               onTouchEnd={handleTouchEnd}
               onClickCapture={handleClickCapture}
+              onDragStart={handleDragStart}
               className={`overflow-hidden select-none ${
-                isDragging ? "cursor-grabbing" : "cursor-grab"
+                isDragging ? "cursor-grabbing" : "cursor-auto"
               }`}
               title="좌우로 드래그해서 프로젝트 이동"
             >
