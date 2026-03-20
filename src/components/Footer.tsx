@@ -67,10 +67,11 @@ const Footer = ({ className = "" }: FooterProps) => {
           {/* Quote */}
           <div className="border-t border-gray-700 pt-8">
             <blockquote className="text-xl italic text-gray-300 mb-4">
-              "늦둥이지만 풍부한 경험과 뛰어난 책임감으로 프로젝트에 임합니다."
+              "늦은 나이에 개발을 시작했지만, 하루하루 즐거움을 느끼며 진심을
+              담아 작업하고 있습니다."
             </blockquote>
             <p className="text-gray-400">
-              © 2025 원뀨의 포트폴리오. Made with ❤️ and React.
+              © 2026 원뀨의 포트폴리오. Made with ❤️ and React.
             </p>
           </div>
         </div>
