@@ -20,17 +20,17 @@ const IntroSection = ({
   return (
     <section
       id="intro"
-      className={`min-h-screen bg-linear-to-b from-slate-950 via-slate-900 to-slate-900 flex items-center pt-16 ${className}`}
+      className={`min-h-[60vh] flex items-center pt-16 ${className}`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="text-center">
           {/* Avatar */}
-          <div className="w-24 h-24 sm:w-40 sm:h-40 bg-linear-to-br from-slate-800 to-slate-700 rounded-full border-4 border-slate-600 shadow-xl mx-auto flex items-center justify-center text-7xl mb-6 sm:mb-8 overflow-hidden">
+          <div className="w-24 h-24 sm:w-40 sm:h-40  rounded-xs mx-auto flex items-center justify-center text-7xl mb-6 sm:mb-8 overflow-hidden">
             {avatar.startsWith("/") || avatar.startsWith("http") ? (
               <img
                 src={avatar}
                 alt="프로필 사진"
-                className="w-full h-full object-cover rounded-full"
+                className="w-full h-full object-cover rounded-xs"
               />
             ) : (
               <span>{avatar}</span>

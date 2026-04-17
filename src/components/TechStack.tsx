@@ -73,7 +73,7 @@ const TechStack = ({ className = "" }: TechStackProps) => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {techCategories.map((category, categoryIndex) => (
           <div key={categoryIndex} className="space-y-3">
-            <h4 className="text-sm font-semibold text-second text-center border-b border-slate-600 pb-1">
+            <h4 className="text-sm font-semibold text-second text-center border-b pb-1">
               {category.title}
             </h4>
             <div className="flex flex-wrap justify-center gap-2">

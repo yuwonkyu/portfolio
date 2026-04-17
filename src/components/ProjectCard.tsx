@@ -38,16 +38,16 @@ const ProjectCard = ({ project, colorScheme }: ProjectCardProps) => {
 
   return (
     <div
-      className={`rounded-3xl p-5 sm:p-10 shadow-2xl border-2 ${colorScheme.bg} ${colorScheme.border}`}
+      className={`rounded-3xl p-5 sm:p-10  ${colorScheme.bg} ${colorScheme.border}`}
     >
       <div
-        className={`h-48 sm:h-80 bg-slate-950/70 rounded-2xl mb-4 sm:mb-8 flex items-center justify-center overflow-hidden relative shadow-lg border border-slate-700`}
+        className={`h-48 sm:h-80 mb-4 sm:mb-8 flex items-center justify-center overflow-hidden relative `}
       >
         {project.imageUrl && !isImageHidden ? (
           <img
             src={project.imageUrl}
             alt={project.imageAlt || `${project.title} 프로젝트 스크린샷`}
-            className="w-full h-full object-contain rounded-2xl pointer-events-none select-none"
+            className="w-full h-full object-contain pointer-events-none select-none"
             onError={handleImageError}
             loading="lazy"
             decoding="async"
@@ -80,7 +80,7 @@ const ProjectCard = ({ project, colorScheme }: ProjectCardProps) => {
           {project.technologies.map((tech, index) => (
             <span
               key={`${tech}-${index}`}
-              className={`${colorScheme.techBg} ${colorScheme.techText} px-2 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-medium shadow-sm`}
+              className={`${colorScheme.techBg} ${colorScheme.techText} px-2 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-medium`}
             >
               {tech}
             </span>
@@ -92,7 +92,7 @@ const ProjectCard = ({ project, colorScheme }: ProjectCardProps) => {
         {project.liveUrl && (
           <button
             onClick={() => window.open(project.liveUrl, "_blank")}
-            className={`${colorScheme.buttonBg} text-white px-4 py-2 sm:px-6 sm:py-3 rounded-xl ${colorScheme.buttonHover} cursor-pointer font-medium shadow-lg flex-1 text-center text-sm sm:text-base`}
+            className={`${colorScheme.buttonBg} text-white px-4 py-2 sm:px-6 sm:py-3 rounded-xl ${colorScheme.buttonHover} cursor-pointer font-medium flex-1 text-center text-sm sm:text-base`}
           >
             Live Demo
           </button>
@@ -100,7 +100,7 @@ const ProjectCard = ({ project, colorScheme }: ProjectCardProps) => {
         {project.githubUrl && (
           <button
             onClick={() => window.open(project.githubUrl, "_blank")}
-            className="bg-slate-700 text-slate-100 px-4 py-2 sm:px-6 sm:py-3 rounded-xl hover:bg-slate-600 cursor-pointer font-medium shadow-lg flex-1 text-center text-sm sm:text-base"
+            className="bg-slate-700 text-slate-100 px-4 py-2 sm:px-6 sm:py-3 rounded-xl hover:bg-slate-600 cursor-pointer font-medium flex-1 text-center text-sm sm:text-base"
           >
             GitHub
           </button>

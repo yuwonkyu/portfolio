@@ -227,7 +227,7 @@ export const personalProjects: ProjectData[] = [
 export const colorSchemes = {
   ocean: {
     bg: "surface-card",
-    border: "border-slate-700/80",
+    border: "",
     titleColor: "text-main",
     descColor: "text-second",
     techBg: "bg-slate-800",
@@ -237,7 +237,7 @@ export const colorSchemes = {
   },
   green: {
     bg: "bg-green-100",
-    border: "border-green-200",
+    border: "",
     titleColor: "text-green-800",
     descColor: "text-green-700",
     techBg: "bg-green-100",
@@ -247,7 +247,7 @@ export const colorSchemes = {
   },
   blue: {
     bg: "bg-blue-100",
-    border: "border-blue-200",
+    border: "",
     titleColor: "text-blue-800",
     descColor: "text-blue-700",
     techBg: "bg-blue-100",
@@ -257,7 +257,7 @@ export const colorSchemes = {
   },
   purple: {
     bg: "bg-purple-100",
-    border: "border-purple-200",
+    border: "",
     titleColor: "text-purple-800",
     descColor: "text-purple-700",
     techBg: "bg-purple-100",
@@ -267,7 +267,7 @@ export const colorSchemes = {
   },
   orange: {
     bg: "bg-orange-100",
-    border: "border-orange-200",
+    border: "",
     titleColor: "text-orange-800",
     descColor: "text-orange-700",
     techBg: "bg-orange-100",

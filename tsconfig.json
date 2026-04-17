@@ -22,7 +22,6 @@
     "noUncheckedIndexedAccess": true,
 
     /* Path mapping for better imports */
-    "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
     }

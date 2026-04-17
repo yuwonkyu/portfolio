@@ -28,7 +28,7 @@ function App() {
       <ProjectSection
         id="live-services"
         title="🚀 실제 운영 서비스"
-        bgGradient="bg-gradient-to-b from-slate-900 via-slate-900 to-slate-950"
+        bgGradient=""
         projects={liveServiceProjects}
         enableCarousel
         colorScheme={colorSchemes.ocean}
@@ -37,7 +37,7 @@ function App() {
       <ProjectSection
         id="personal"
         title="🎮 개인 프로젝트"
-        bgGradient="bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950"
+        bgGradient=""
         projects={personalProjects}
         enableCarousel
         colorScheme={colorSchemes.ocean}
@@ -46,7 +46,7 @@ function App() {
       <ProjectSection
         id="growth"
         title="📚 성장 프로젝트 (기초 · 중급 · 심화)"
-        bgGradient="bg-gradient-to-b from-slate-950 via-slate-900 to-black"
+        bgGradient=""
         projects={growthProjects}
         enableCarousel
         colorScheme={colorSchemes.ocean}

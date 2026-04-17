@@ -183,18 +183,10 @@ const ProjectSection = ({
   };
 
   return (
-    <section id={id} className={`min-h-screen ${bgGradient} flex items-center`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12 sm:py-20">
+    <section id={id} className={`min-h-[60vh] ${bgGradient} flex items-center`}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-7 sm:py-12">
         <h2
           className={`text-2xl sm:text-4xl font-bold ${sectionTitleColor ?? colorScheme.titleColor} text-center mb-6 sm:mb-12`}
-          style={
-            sectionTitleColor
-              ? {
-                  textShadow:
-                    "0 0 6px rgba(0,0,0,0.6), 0 0 12px rgba(0,0,0,0.4), 0 0 2px rgba(0,0,0,0.8)",
-                }
-              : undefined
-          }
         >
           {title}
         </h2>

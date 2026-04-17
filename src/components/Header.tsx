@@ -14,42 +14,37 @@ interface HeaderProps {
 
 const Header = ({
   title = "원뀨의 포트폴리오",
-  logo = "🎮",
+  logo = "💻",
   navItems = [
     {
       id: "intro",
       label: "소개",
       href: "#intro",
-      colorScheme:
-        "bg-slate-800/90 hover:bg-slate-700 text-main border border-slate-600/70",
+      colorScheme: "bg-slate-800/90 hover:bg-slate-700 text-main",
     },
     {
       id: "live-services",
       label: "서비스",
       href: "#live-services",
-      colorScheme:
-        "bg-slate-800/90 hover:bg-slate-700 text-second border border-slate-600/70",
+      colorScheme: "bg-slate-800/90 hover:bg-slate-700 text-second",
     },
     {
       id: "personal",
       label: "개인",
       href: "#personal",
-      colorScheme:
-        "bg-slate-800/90 hover:bg-slate-700 text-second border border-slate-600/70",
+      colorScheme: "bg-slate-800/90 hover:bg-slate-700 text-second",
     },
     {
       id: "growth",
       label: "학습",
       href: "#growth",
-      colorScheme:
-        "bg-slate-800/90 hover:bg-slate-700 text-third border border-slate-600/70",
+      colorScheme: "bg-slate-800/90 hover:bg-slate-700 text-third",
     },
     {
       id: "contact",
       label: "연락",
       href: "#contact",
-      colorScheme:
-        "bg-slate-800/90 hover:bg-slate-700 text-third border border-slate-600/70",
+      colorScheme: "bg-slate-800/90 hover:bg-slate-700 text-third",
     },
   ],
   className = "",
@@ -66,7 +61,7 @@ const Header = ({
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 bg-slate-950/75 backdrop-blur-md border-b border-slate-700/80 shadow-lg ${className}`}
+      className={`fixed top-0 left-0 right-0 z-50 bg-slate-950/75 backdrop-blur-md  ${className}`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
