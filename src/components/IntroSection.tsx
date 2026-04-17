@@ -8,10 +8,10 @@ interface IntroSectionProps {
 }
 
 const IntroSection = ({
-  avatar = "🧙‍♂️",
-  title = "게임 UI/UX & 프론트엔드 개발자",
+  avatar = "",
+  title = "프론트엔드 개발자",
   descriptions = [
-    "게임 UI/UX 및 프론트엔드, 게임 디자인에 관심이 있는 개발자입니다.",
+    "프론트엔드 개발자입니다.",
     "늦은 나이에 개발을 시작했지만, 하루하루 즐거움을 느끼며 개발에 진심을 담아 작업하고 있습니다.",
     "사용자에게 즐거움과 편의성을 제공하는 인터페이스 구현을 목표로 합니다.",
   ],

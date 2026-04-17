@@ -192,7 +192,25 @@ const ProjectSection = ({
         </h2>
 
         {showCarousel ? (
-          <div className="max-w-5xl mx-auto">
+          <div className="max-w-5xl mx-auto relative">
+            {/* Left Arrow */}
+            <button
+              onClick={handlePrev}
+              className="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-12 h-12 flex items-center justify-center text-2xl text-white/40 hover:text-white/70 transition-colors duration-200 bg-black/20 rounded-full hover:bg-black/40"
+              aria-label="이전 프로젝트"
+            >
+              ‹
+            </button>
+
+            {/* Right Arrow */}
+            <button
+              onClick={handleNext}
+              className="absolute right-0 top-1/2 -translate-y-1/2 z-10 w-12 h-12 flex items-center justify-center text-2xl text-white/40 hover:text-white/70 transition-colors duration-200 bg-black/20 rounded-full hover:bg-black/40"
+              aria-label="다음 프로젝트"
+            >
+              ›
+            </button>
+
             <div
               ref={viewportRef}
               onMouseDown={handleMouseDown}
