@@ -226,14 +226,14 @@ export const personalProjects: ProjectData[] = [
 
 export const colorSchemes = {
   ocean: {
-    bg: "bg-slate-50",
-    border: "border-slate-200",
-    titleColor: "text-slate-800",
-    descColor: "text-gray-600",
-    techBg: "bg-slate-100",
-    techText: "text-slate-700",
-    buttonBg: "bg-slate-600",
-    buttonHover: "hover:bg-slate-700",
+    bg: "surface-card",
+    border: "border-slate-700/80",
+    titleColor: "text-main",
+    descColor: "text-second",
+    techBg: "bg-slate-800",
+    techText: "text-second",
+    buttonBg: "bg-sky-600",
+    buttonHover: "hover:bg-sky-500",
   },
   green: {
     bg: "bg-green-100",

@@ -245,8 +245,8 @@ const ProjectSection = ({
                   aria-label={`${project.title}로 이동`}
                   className={`h-2.5 rounded-full transition-all cursor-pointer ${
                     currentIndex === index
-                      ? "w-16 bg-white"
-                      : "w-8 bg-white/40 hover:bg-white/70"
+                      ? "w-16 bg-sky-300"
+                      : "w-8 bg-slate-600 hover:bg-slate-500"
                   }`}
                 />
               ))}

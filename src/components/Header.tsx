@@ -20,31 +20,36 @@ const Header = ({
       id: "intro",
       label: "소개",
       href: "#intro",
-      colorScheme: "bg-purple-100 hover:bg-purple-200 text-purple-700",
-    },
-    {
-      id: "personal",
-      label: "개인",
-      href: "#personal",
-      colorScheme: "bg-sky-100 hover:bg-sky-200 text-sky-700",
+      colorScheme:
+        "bg-slate-800/90 hover:bg-slate-700 text-main border border-slate-600/70",
     },
     {
       id: "live-services",
       label: "서비스",
       href: "#live-services",
-      colorScheme: "bg-emerald-100 hover:bg-emerald-200 text-emerald-700",
+      colorScheme:
+        "bg-slate-800/90 hover:bg-slate-700 text-second border border-slate-600/70",
+    },
+    {
+      id: "personal",
+      label: "개인",
+      href: "#personal",
+      colorScheme:
+        "bg-slate-800/90 hover:bg-slate-700 text-second border border-slate-600/70",
     },
     {
       id: "growth",
       label: "학습",
       href: "#growth",
-      colorScheme: "bg-cyan-100 hover:bg-cyan-200 text-cyan-700",
+      colorScheme:
+        "bg-slate-800/90 hover:bg-slate-700 text-third border border-slate-600/70",
     },
     {
       id: "contact",
       label: "연락",
       href: "#contact",
-      colorScheme: "bg-blue-100 hover:bg-blue-200 text-blue-700",
+      colorScheme:
+        "bg-slate-800/90 hover:bg-slate-700 text-third border border-slate-600/70",
     },
   ],
   className = "",
@@ -61,12 +66,12 @@ const Header = ({
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-purple-200 shadow-lg ${className}`}
+      className={`fixed top-0 left-0 right-0 z-50 bg-slate-950/75 backdrop-blur-md border-b border-slate-700/80 shadow-lg ${className}`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo & Title */}
-          <h1 className="font-bold text-purple-600 text-sm sm:text-lg">
+          <h1 className="font-bold text-main text-sm sm:text-lg">
             <span>{logo}</span>
             <span className="hidden sm:inline"> {title}</span>
           </h1>

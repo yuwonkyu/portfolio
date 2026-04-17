@@ -38,10 +38,10 @@ const ProjectCard = ({ project, colorScheme }: ProjectCardProps) => {
 
   return (
     <div
-      className={`bg-white/90 backdrop-blur-md rounded-3xl p-5 sm:p-10 shadow-2xl border-2 ${colorScheme.border}`}
+      className={`rounded-3xl p-5 sm:p-10 shadow-2xl border-2 ${colorScheme.bg} ${colorScheme.border}`}
     >
       <div
-        className={`h-48 sm:h-80 ${colorScheme.bg} rounded-2xl mb-4 sm:mb-8 flex items-center justify-center overflow-hidden relative shadow-lg`}
+        className={`h-48 sm:h-80 bg-slate-950/70 rounded-2xl mb-4 sm:mb-8 flex items-center justify-center overflow-hidden relative shadow-lg border border-slate-700`}
       >
         {project.imageUrl && !isImageHidden ? (
           <img
@@ -54,7 +54,7 @@ const ProjectCard = ({ project, colorScheme }: ProjectCardProps) => {
             draggable={false}
           />
         ) : (
-          <div className="text-7xl text-gray-400">🚀</div>
+          <div className="text-7xl text-third">🚀</div>
         )}
       </div>
 
@@ -100,7 +100,7 @@ const ProjectCard = ({ project, colorScheme }: ProjectCardProps) => {
         {project.githubUrl && (
           <button
             onClick={() => window.open(project.githubUrl, "_blank")}
-            className="bg-gray-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-xl hover:bg-gray-700 cursor-pointer font-medium shadow-lg flex-1 text-center text-sm sm:text-base"
+            className="bg-slate-700 text-slate-100 px-4 py-2 sm:px-6 sm:py-3 rounded-xl hover:bg-slate-600 cursor-pointer font-medium shadow-lg flex-1 text-center text-sm sm:text-base"
           >
             GitHub
           </button>

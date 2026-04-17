@@ -20,18 +20,15 @@ function App() {
   );
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen text-main">
       <Header />
 
-      <IntroSection
-        avatar="/me.jpg"
-        className="bg-gradient-to-b from-sky-100 via-cyan-100 to-blue-200"
-      />
+      <IntroSection avatar="/me.jpg" />
 
       <ProjectSection
         id="live-services"
         title="🚀 실제 운영 서비스"
-        bgGradient="bg-gradient-to-b from-cyan-100 via-sky-200 to-blue-300"
+        bgGradient="bg-gradient-to-b from-slate-900 via-slate-900 to-slate-950"
         projects={liveServiceProjects}
         enableCarousel
         colorScheme={colorSchemes.ocean}
@@ -40,20 +37,18 @@ function App() {
       <ProjectSection
         id="personal"
         title="🎮 개인 프로젝트"
-        bgGradient="bg-gradient-to-b from-blue-200 via-indigo-300 to-indigo-500"
+        bgGradient="bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950"
         projects={personalProjects}
         enableCarousel
-        sectionTitleColor="text-white"
         colorScheme={colorSchemes.ocean}
       />
 
       <ProjectSection
         id="growth"
         title="📚 성장 프로젝트 (기초 · 중급 · 심화)"
-        bgGradient="bg-gradient-to-b from-indigo-500 via-slate-700 to-slate-900"
+        bgGradient="bg-gradient-to-b from-slate-950 via-slate-900 to-black"
         projects={growthProjects}
         enableCarousel
-        sectionTitleColor="text-white"
         colorScheme={colorSchemes.ocean}
       />
 
