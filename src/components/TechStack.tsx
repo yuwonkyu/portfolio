@@ -64,23 +64,23 @@ const TechStack = ({ className = "" }: TechStackProps) => {
 
   return (
     <div
-      className={`surface-card rounded-2xl p-6 max-w-4xl mx-auto ${className}`}
+      className={`surface-card rounded-[2rem] border border-slate-800/80 p-6 sm:p-7 ${className}`}
     >
       <h3 className="text-main font-bold mb-6 text-lg text-center">
-        기술 스택
+        핵심 기술 스택
       </h3>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {techCategories.map((category, categoryIndex) => (
-          <div key={categoryIndex} className="space-y-3">
-            <h4 className="text-sm font-semibold text-second text-center border-b pb-1">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {techCategories.map((category) => (
+          <div key={category.title} className="space-y-3">
+            <h4 className="text-sm font-semibold text-second text-center border-b border-slate-800 pb-2">
               {category.title}
             </h4>
             <div className="flex flex-wrap justify-center gap-2">
-              {category.techs.map((tech, techIndex) => (
+              {category.techs.map((tech) => (
                 <span
-                  key={techIndex}
-                  className={`${tech.color} px-3 py-1 rounded-full font-medium text-sm transition-transform hover:scale-105 cursor-default`}
+                  key={tech.name}
+                  className={`${tech.color} px-3 py-1 rounded-full font-medium text-sm`}
                 >
                   {tech.name}
                 </span>

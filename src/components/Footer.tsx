@@ -4,73 +4,48 @@ interface FooterProps {
 
 const Footer = ({ className = "" }: FooterProps) => {
   return (
-    <footer id="contact" className={`py-10 ${className}`}>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
-          {/* Header */}
-          <h2 className="text-4xl font-bold mb-4 text-main">연락하기</h2>
-          <p className="text-second text-lg mb-12 max-w-2xl mx-auto">
-            함께 성장할 수 있는 기회를 기대합니다!
-            <br />
-            언제든지 편하게 연락해주세요 😊
+    <footer id="contact" className={`py-16 sm:py-20 ${className}`}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="surface-card rounded-[2rem] border border-slate-800/80 p-8 sm:p-10 text-center">
+          <p className="text-sm font-semibold tracking-[0.24em] uppercase text-sky-300 mb-3">
+            Contact
+          </p>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-main">
+            함께 만들 이야기가 있다면 편하게 연락 주세요
+          </h2>
+          <p className="text-second text-base sm:text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
+            운영 목적에 맞는 화면 구조를 고민하고, 협업 가능한 프론트엔드 코드를
+            함께 만들고 싶습니다.
           </p>
 
-          {/* Contact Info */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            {/* Email */}
-            <div className="surface-panel rounded-2xl p-6 hover:bg-slate-800/70 transition-all duration-300 hover:scale-105">
-              <div className="text-4xl mb-4">📧</div>
-              <h3 className="text-xl font-semibold mb-2 text-main">이메일</h3>
-              <a
-                href="mailto:duck01777@naver.com"
-                className="text-sky-300 hover:text-sky-200 transition-colors cursor-pointer"
-              >
-                duck01777@naver.com
-              </a>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-10">
+            <a
+              href="mailto:duck01777@naver.com"
+              className="surface-panel rounded-2xl p-6 hover:bg-slate-800/70 transition-all duration-300"
+            >
+              <p className="text-main font-semibold mb-2">Email</p>
+              <p className="text-sky-300 break-all">duck01777@naver.com</p>
+            </a>
 
-            {/* GitHub */}
-            <div className="surface-panel rounded-2xl p-6 hover:bg-slate-800/70 transition-all duration-300 hover:scale-105">
-              <div className="mb-4 flex justify-center">
-                <img
-                  src="/github-icon.svg"
-                  alt="GitHub"
-                  className="w-10 h-10"
-                />
-              </div>
-              <h3 className="text-xl font-semibold mb-2 text-main">GitHub</h3>
-              <a
-                href="https://github.com/yuwonkyu"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sky-300 hover:text-sky-200 transition-colors cursor-pointer"
-              >
-                @yuwonkyu
-              </a>
-            </div>
+            <a
+              href="https://github.com/yuwonkyu"
+              target="_blank"
+              rel="noreferrer"
+              className="surface-panel rounded-2xl p-6 hover:bg-slate-800/70 transition-all duration-300"
+            >
+              <p className="text-main font-semibold mb-2">GitHub</p>
+              <p className="text-sky-300">@yuwonkyu</p>
+            </a>
 
-            {/* Portfolio */}
-            <div className="surface-panel rounded-2xl p-6 hover:bg-slate-800/70 transition-all duration-300 hover:scale-105">
-              <div className="text-4xl mb-4">🌐</div>
-              <h3 className="text-xl font-semibold mb-2 text-main">
-                포트폴리오
-              </h3>
-              <span className="text-second">
-                현재 보고 계시는 사이트입니다!
-              </span>
+            <div className="surface-panel rounded-2xl p-6">
+              <p className="text-main font-semibold mb-2">Portfolio</p>
+              <p className="text-second">현재 보고 계신 사이트를 직접 설계하고 구현했습니다.</p>
             </div>
           </div>
 
-          {/* Quote */}
-          <div className="pt-8">
-            <blockquote className="text-xl italic text-second mb-4">
-              "하루하루 진심으로 개발을 즐기며, 함께 성장할 수 있는 기회를
-              기대합니다!"
-            </blockquote>
-            <p className="text-third">
-              © 2026 원뀨의 포트폴리오. Made with ❤️ and React.
-            </p>
-          </div>
+          <p className="text-third text-sm">
+            2026 유원규 포트폴리오. React와 TypeScript로 만들었습니다.
+          </p>
         </div>
       </div>
     </footer>

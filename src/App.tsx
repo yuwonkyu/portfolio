@@ -1,56 +1,44 @@
-﻿import { useMemo } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import IntroSection from "./components/IntroSection";
-import ProjectSection from "./components/ProjectSection";
+import FeaturedProjectsSection from "./components/FeaturedProjectsSection";
+import CompactProjectsSection from "./components/CompactProjectsSection";
+import CollaborationSection from "./components/CollaborationSection";
 import Footer from "./components/Footer";
 import {
-  basicProjects,
-  intermediateProjects,
-  advancedProjects,
-  liveServiceProjects,
+  collaborationHighlights,
+  coreStrengths,
+  featuredProjects,
   personalProjects,
-  colorSchemes,
+  studyProjects,
 } from "./data/projectsData";
 
 function App() {
-  const growthProjects = useMemo(
-    () => [...basicProjects, ...intermediateProjects, ...advancedProjects],
-    [],
-  );
-
   return (
     <div className="min-h-screen text-main">
       <Header />
 
-      <IntroSection avatar="/me.jpg" />
+      <IntroSection avatar="/me.jpg" strengths={coreStrengths} />
 
-      <ProjectSection
-        id="live-services"
-        title="🚀 실제 운영 서비스"
-        bgGradient=""
-        projects={liveServiceProjects}
-        enableCarousel
-        colorScheme={colorSchemes.ocean}
-      />
+      <FeaturedProjectsSection projects={featuredProjects} />
 
-      <ProjectSection
-        id="personal"
-        title="🎮 개인 프로젝트"
-        bgGradient=""
+      <CompactProjectsSection
+        id="personal-projects"
+        eyebrow="Selected Projects"
+        title="개인 프로젝트"
+        description="직접 기획하고 구현하며 프론트엔드 구조, 상태 관리, 사용자 흐름을 꾸준히 실험해온 작업들입니다."
         projects={personalProjects}
-        enableCarousel
-        colorScheme={colorSchemes.ocean}
       />
 
-      <ProjectSection
-        id="growth"
-        title="📚 성장 프로젝트 (기초 · 중급 · 심화)"
-        bgGradient=""
-        projects={growthProjects}
-        enableCarousel
-        colorScheme={colorSchemes.ocean}
+      <CompactProjectsSection
+        id="study-works"
+        eyebrow="Learning Archive"
+        title="학습 작업물"
+        description="학습 과정에서 만든 프로젝트들로, 사용 기술과 함께 협업 경험과 성장 포인트를 간단히 정리했습니다."
+        projects={studyProjects}
       />
+
+      <CollaborationSection items={collaborationHighlights} />
 
       <Footer />
     </div>
