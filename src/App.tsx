@@ -8,6 +8,7 @@ import {
   basicProjects,
   intermediateProjects,
   advancedProjects,
+  liveServiceProjects,
   personalProjects,
   colorSchemes,
 } from "./data/projectsData";
@@ -25,6 +26,15 @@ function App() {
       <IntroSection
         avatar="/me.jpg"
         className="bg-gradient-to-b from-sky-100 via-cyan-100 to-blue-200"
+      />
+
+      <ProjectSection
+        id="live-services"
+        title="🚀 실제 운영 서비스"
+        bgGradient="bg-gradient-to-b from-cyan-100 via-sky-200 to-blue-300"
+        projects={liveServiceProjects}
+        enableCarousel
+        colorScheme={colorSchemes.ocean}
       />
 
       <ProjectSection

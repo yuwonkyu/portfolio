@@ -29,6 +29,12 @@ const Header = ({
       colorScheme: "bg-sky-100 hover:bg-sky-200 text-sky-700",
     },
     {
+      id: "live-services",
+      label: "서비스",
+      href: "#live-services",
+      colorScheme: "bg-emerald-100 hover:bg-emerald-200 text-emerald-700",
+    },
+    {
       id: "growth",
       label: "학습",
       href: "#growth",

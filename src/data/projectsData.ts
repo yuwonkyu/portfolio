@@ -6,7 +6,7 @@ export const basicProjects: ProjectData[] = [
     title: "4U - 오픈마인드",
     description:
       "첫 팀 프로젝트라 긴장했지만 4명이서 3주 동안 익명 질문 플랫폼을 만들었어요.\n메인 페이지랑 질문 모달을 만들면서 React 컴포넌트의 매력에 빠졌습니다.\n처음엔 CSS 때문에 밤새웠는데, 지금 보니 그때가 진짜 성장의 시작이었네요.",
-    imageUrl: "/project1.png",
+    imageUrl: "/images/project1.png",
     imageAlt:
       "4U 오픈마인드 프로젝트 - 익명 질문 플랫폼의 메인 페이지와 질문 모달 화면을 보여주는 웹사이트 스크린샷",
     technologies: [
@@ -28,7 +28,7 @@ export const intermediateProjects: ProjectData[] = [
     title: "SGS - 술 마시는 개발자 생활",
     description:
       "팀장을 맡게 되어서 떨렸지만, 5명이서 술 리뷰 사이트를 만들어냈어요.\nGitHub 세팅부터 프로필 페이지까지 직접 구현하면서 팀 개발의 재미를 알았습니다.\n토큰 인증 구현할 때 이해를 못 했지만, 그 덕분에 JWT를 제대로 이해하게 됐어요.",
-    imageUrl: "/sgs-project.png",
+    imageUrl: "/images/sgs-project.png",
     imageAlt: "SGS 프로젝트 - 술 마시는 개발자 생활 웹사이트 스크린샷",
     technologies: [
       "Next.js",
@@ -64,9 +64,65 @@ export const advancedProjects: ProjectData[] = [
     ],
     liveUrl: "https://codenomad-8itj.vercel.app/",
     githubUrl: "https://github.com/codeNomad-FE/wazy",
-    imageUrl: "/wazy-project.png",
+    imageUrl: "/images/wazy-project.png",
     imageAlt:
       "Wazy 코드노마드 프로젝트 - 글로벌 노마드 여행 체험 플랫폼 스크린샷",
+  },
+];
+
+export const liveServiceProjects: ProjectData[] = [
+  {
+    id: "live-omgn",
+    title: "OMGN - 스튜디오 & 프로젝트 포트폴리오",
+    description:
+      "OMGN은 스튜디오 소개와 프로젝트 결과물을 한눈에 보여주는 포트폴리오 웹사이트입니다.\n브랜드 색상과 이미지 중심 레이아웃을 기반으로 모바일/PC에서 읽기 쉬운 구조를 목표로 제작했습니다.",
+    imageUrl: "/images/OMGN.png",
+    imageAlt: "OMGN 서비스 메인 화면 스크린샷",
+    technologies: [
+      "Next.js 16 (App Router)",
+      "TypeScript",
+      "Tailwind CSS v4",
+      "FSD",
+      "YouTube Embed",
+      "Node.js 20+",
+      "npm",
+      "Vercel",
+    ],
+    liveUrl: "https://omgn.vercel.app/",
+    githubUrl: "https://github.com/WK-Friends/OMGN",
+  },
+  {
+    id: "live-sunglitter",
+    title: "윤슬이집 - 스튜디오 안내 랜딩",
+    description:
+      "제주 월정리 바다 앞 스튜디오 정보를 한 화면에서 확인할 수 있도록 만든 운영용 랜딩 페이지입니다.\n예약 안내, 위치, 인스타그램 연결 등 실제 문의 흐름에 맞춰 구조를 단순하게 구성했습니다.",
+    imageUrl: "/images/sunglitter.png",
+    imageAlt: "윤슬이집 서비스 메인 화면 스크린샷",
+    technologies: [
+      "Next.js (App Router)",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Upstash Redis (Vercel 배포용 예약현황 저장소)",
+    ],
+    liveUrl: "https://sun-glitter.vercel.app/",
+    githubUrl: "https://github.com/yuwonkyu/SunGlitter",
+  },
+  {
+    id: "live-instalink",
+    title: "InstaLink - 1인 사업자 링크 페이지",
+    description:
+      "1인 사업자·프리랜서를 위한 링크 페이지 서비스입니다.\nPT 트레이너, 필라테스 강사, 미용실, 프리랜서 등 누구나 링크 하나로 소개부터 고객 상담 연결까지 할 수 있도록 설계했습니다.",
+    imageUrl: "/images/linktree.png",
+    imageAlt: "InstaLink 서비스 소개 페이지 스크린샷",
+    technologies: [
+      "Next.js (App Router)",
+      "TypeScript",
+      "Tailwind CSS v4",
+      "Vercel",
+    ],
+    liveUrl: "https://kku-ui.vercel.app/",
+    githubUrl: "https://github.com/yuwonkyu/InstaLink",
   },
 ];
 
@@ -88,7 +144,7 @@ export const personalProjects: ProjectData[] = [
     ],
     liveUrl: "https://template-gallery-two.vercel.app/",
     githubUrl: "https://github.com/yuwonkyu/TemplateGallery",
-    imageUrl: "/TemplateGallery.png",
+    imageUrl: "/images/TemplateGallery.png",
     imageAlt:
       "TemplateGallery 프로젝트 - 포트폴리오 템플릿 에디터 웹페이지 스크린샷",
   },
@@ -108,7 +164,7 @@ export const personalProjects: ProjectData[] = [
     ],
     liveUrl: "https://project-site-draw.vercel.app",
     githubUrl: "https://github.com/yuwonkyu/Project_SiteDraw",
-    imageUrl: "/project-sitedraw.png",
+    imageUrl: "/images/project-sitedraw.png",
     imageAlt:
       "Project SiteDraw 프로젝트 - 건설 현장 도면 탐색 및 리비전 이력 확인 웹 뷰어 스크린샷",
   },
@@ -131,7 +187,7 @@ export const personalProjects: ProjectData[] = [
     ],
     liveUrl: "https://realweather-frontend.vercel.app/",
     githubUrl: "https://github.com/yuwonkyu/realweather-frontend",
-    imageUrl: "/realweather-project.png",
+    imageUrl: "/images/realweather-project.png",
     imageAlt:
       "RealWeather 프로젝트 - 실시간 날씨 정보 웹 애플리케이션 스크린샷",
   },
@@ -151,7 +207,7 @@ export const personalProjects: ProjectData[] = [
     ],
     liveUrl: "https://make-character-v2.vercel.app/",
     githubUrl: "https://github.com/yuwonkyu/makeCharacter",
-    imageUrl: "/mini-project.png",
+    imageUrl: "/images/mini-project.png",
     imageAlt:
       "Make Character 프로젝트 - 게임 캐릭터 커스터마이징 웹사이트 스크린샷",
   },
@@ -163,7 +219,7 @@ export const personalProjects: ProjectData[] = [
     technologies: ["React", "TypeScript", "Vite", "Tailwind CSS", "Vercel"],
     liveUrl: "https://portfolio-wonkyu.vercel.app/",
     githubUrl: "https://github.com/yuwonkyu/portfolio",
-    imageUrl: "/portfolio-project.png",
+    imageUrl: "/images/portfolio-project.png",
     imageAlt: "Portfolio 프로젝트 - 개발자 포트폴리오 웹사이트 스크린샷",
   },
 ];
