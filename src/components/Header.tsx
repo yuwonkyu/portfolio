@@ -13,17 +13,13 @@ interface HeaderProps {
 
 const Header = ({
   title = "유원규 포트폴리오",
-  logo = "YK",
+  logo = "WK",
   navItems = [
     { id: "intro", label: "소개", href: "#intro" },
-    { id: "featured-work", label: "운영 서비스", href: "#featured-work" },
-    {
-      id: "personal-projects",
-      label: "개인 프로젝트",
-      href: "#personal-projects",
-    },
-    { id: "study-works", label: "학습 작업물", href: "#study-works" },
-    { id: "collaboration", label: "협업", href: "#collaboration" },
+    { id: "featured-work", label: "대표 프로젝트", href: "#featured-work" },
+    { id: "personal-projects", label: "개인 프로젝트", href: "#personal-projects" },
+    { id: "study-works", label: "협업 프로젝트", href: "#study-works" },
+    { id: "collaboration", label: "협업 경험", href: "#collaboration" },
     { id: "contact", label: "연락", href: "#contact" },
   ],
   className = "",
@@ -40,18 +36,18 @@ const Header = ({
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 bg-slate-950/75 backdrop-blur-md border-b border-slate-900/80 ${className}`}
+      className={`fixed top-0 left-0 right-0 z-50 border-b border-[color:var(--line-soft)] bg-[rgba(251,248,242,0.78)] backdrop-blur-xl ${className}`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 gap-4">
-          <h1 className="font-bold text-main text-sm sm:text-lg shrink-0">
-            <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-sky-500/15 text-sky-200 mr-2">
+          <h1 className="font-bold text-main text-sm sm:text-lg shrink-0 flex items-center">
+            <span className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-[rgba(31,122,106,0.12)] text-[color:var(--accent-primary)] mr-2">
               {logo}
             </span>
             <span className="hidden sm:inline">{title}</span>
           </h1>
 
-          <nav className="flex items-center gap-1 sm:gap-2 overflow-x-auto">
+          <nav className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto">
             {navItems.map((item) => (
               <a
                 key={item.id}
@@ -60,7 +56,7 @@ const Header = ({
                   event.preventDefault();
                   handleNavClick(item.href);
                 }}
-                className="whitespace-nowrap bg-slate-900/90 hover:bg-slate-800 text-second hover:text-main px-3 py-1.5 rounded-full text-xs sm:text-sm transition-all duration-200"
+                className="whitespace-nowrap rounded-full border border-[color:var(--line-soft)] bg-white/75 px-3 py-1.5 text-xs sm:text-sm text-second transition-all duration-200 hover:border-[color:var(--line-strong)] hover:bg-white hover:text-main"
               >
                 {item.label}
               </a>
