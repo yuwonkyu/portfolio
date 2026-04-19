@@ -36,18 +36,18 @@ const Header = ({
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 border-b border-[color:var(--line-soft)] bg-[rgba(251,248,242,0.78)] backdrop-blur-xl ${className}`}
+      className={`fixed top-0 left-0 right-0 z-50 border-b border-[color:var(--line-soft)] bg-[rgba(252,250,245,0.82)] backdrop-blur-xl ${className}`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16 gap-4">
-          <h1 className="font-bold text-main text-sm sm:text-lg shrink-0 flex items-center">
-            <span className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-[rgba(31,122,106,0.12)] text-[color:var(--accent-primary)] mr-2">
+        <div className="flex h-16 items-center justify-between gap-4">
+          <h1 className="flex shrink-0 items-center text-sm font-semibold text-main sm:text-base">
+            <span className="mr-2 inline-flex h-9 w-9 items-center justify-center rounded-full bg-[rgba(41,95,86,0.08)] text-[color:var(--accent-primary)]">
               {logo}
             </span>
             <span className="hidden sm:inline">{title}</span>
           </h1>
 
-          <nav className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto">
+          <nav className="flex items-center gap-1.5 overflow-x-auto sm:gap-2">
             {navItems.map((item) => (
               <a
                 key={item.id}
@@ -56,7 +56,7 @@ const Header = ({
                   event.preventDefault();
                   handleNavClick(item.href);
                 }}
-                className="whitespace-nowrap rounded-full border border-[color:var(--line-soft)] bg-white/75 px-3 py-1.5 text-xs sm:text-sm text-second transition-all duration-200 hover:border-[color:var(--line-strong)] hover:bg-white hover:text-main"
+                className="whitespace-nowrap rounded-full border border-[color:var(--line-soft)] bg-white/80 px-3 py-1.5 text-[12px] text-second transition-all duration-200 hover:border-[color:var(--line-strong)] hover:text-main sm:text-[13px]"
               >
                 {item.label}
               </a>
