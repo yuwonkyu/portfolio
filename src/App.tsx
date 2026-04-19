@@ -26,15 +26,15 @@ function App() {
         id="personal-projects"
         eyebrow="Selected Projects"
         title="개인 프로젝트"
-        description="직접 기획하고 구현하며 프론트엔드 구조, 상태 관리, 사용자 흐름을 꾸준히 실험해온 작업들입니다."
+        description="직접 기획하고 구현하며 정보 구조, 상태 관리, 사용자 흐름을 스스로 설계해 본 작업들입니다."
         projects={personalProjects}
       />
 
       <CompactProjectsSection
         id="study-works"
         eyebrow="Learning Archive"
-        title="학습 작업물"
-        description="학습 과정에서 만든 프로젝트들로, 사용 기술과 함께 협업 경험과 성장 포인트를 간단히 정리했습니다."
+        title="협업과 학습 프로젝트"
+        description="학습 과정에서 진행한 팀 프로젝트를 통해 협업 방식, 역할 분리, 코드 리뷰 경험을 쌓아 온 흐름을 정리했습니다."
         projects={studyProjects}
       />
 
