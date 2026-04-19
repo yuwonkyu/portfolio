@@ -3,6 +3,7 @@
 
 :root {
   --bg-base: #f7f3ea;
+<<<<<<< HEAD
   --bg-surface: rgba(255, 252, 246, 0.84);
   --bg-surface-strong: rgba(255, 255, 255, 0.94);
   --bg-surface-soft: rgba(245, 239, 230, 0.8);
@@ -13,6 +14,20 @@
   --text-second: #5f5245;
   --text-third: #8a7c6c;
   --shadow-soft: 0 24px 72px rgba(98, 74, 45, 0.07);
+=======
+  --bg-surface: rgba(255, 252, 246, 0.82);
+  --bg-surface-strong: rgba(255, 255, 255, 0.92);
+  --bg-surface-soft: rgba(244, 237, 224, 0.78);
+  --line-soft: rgba(154, 132, 107, 0.18);
+  --line-strong: rgba(123, 101, 74, 0.26);
+  --accent-primary: #1f7a6a;
+  --accent-secondary: #d8814d;
+  --accent-tertiary: #7ea7c8;
+  --text-main: #2d2218;
+  --text-second: #5f5143;
+  --text-third: #8b7b69;
+  --shadow-soft: 0 24px 80px rgba(98, 74, 45, 0.08);
+>>>>>>> 12cabbc283c0e6e6f6d54fe214b2b376af59c11f
 }
 
 @layer base {
@@ -30,9 +45,16 @@
   body {
     color: var(--text-main);
     background:
+<<<<<<< HEAD
       radial-gradient(circle at top left, rgba(41, 95, 86, 0.08), transparent 28%),
       radial-gradient(circle at 85% 12%, rgba(41, 95, 86, 0.06), transparent 20%),
       linear-gradient(180deg, #fcfaf5 0%, #f6f1e7 42%, #f2ece2 100%);
+=======
+      radial-gradient(circle at top left, rgba(126, 167, 200, 0.24), transparent 28%),
+      radial-gradient(circle at top right, rgba(216, 129, 77, 0.16), transparent 24%),
+      radial-gradient(circle at 20% 80%, rgba(31, 122, 106, 0.12), transparent 24%),
+      linear-gradient(180deg, #fbf8f2 0%, #f7f1e6 42%, #f3ede4 100%);
+>>>>>>> 12cabbc283c0e6e6f6d54fe214b2b376af59c11f
     background-attachment: fixed;
   }
 
@@ -67,8 +89,45 @@
 .surface-panel {
   background: var(--bg-surface-strong);
   border: 1px solid var(--line-soft);
+<<<<<<< HEAD
   box-shadow: 0 14px 32px rgba(103, 80, 52, 0.05);
   backdrop-filter: blur(10px);
+=======
+  box-shadow: 0 14px 36px rgba(103, 80, 52, 0.06);
+  backdrop-filter: blur(12px);
+}
+
+.accent-pill {
+  background: rgba(31, 122, 106, 0.1);
+  color: var(--accent-primary);
+  border: 1px solid rgba(31, 122, 106, 0.14);
+}
+
+.warm-pill {
+  background: rgba(216, 129, 77, 0.11);
+  color: #a05528;
+  border: 1px solid rgba(216, 129, 77, 0.16);
+}
+
+.soft-divider {
+  border-color: var(--line-soft);
+}
+
+.hero-orb {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(30px);
+  opacity: 0.75;
+  pointer-events: none;
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(123, 101, 74, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(123, 101, 74, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), transparent 100%);
+>>>>>>> 12cabbc283c0e6e6f6d54fe214b2b376af59c11f
 }
 
 .badge-soft {
