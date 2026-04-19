@@ -37,11 +37,7 @@ const CompactProjectsSection = ({
               className="surface-card rounded-[1.85rem] p-6 flex flex-col"
             >
               <div className="flex items-center justify-between gap-3 mb-4">
-<<<<<<< HEAD
                 <span className="badge-soft rounded-full px-3 py-1 text-xs font-medium">
-=======
-                <span className="accent-pill rounded-full px-3 py-1 text-xs font-medium">
->>>>>>> 12cabbc283c0e6e6f6d54fe214b2b376af59c11f
                   {project.category}
                 </span>
                 <span className="text-third text-xs">#{index + 1}</span>
@@ -61,16 +57,10 @@ const CompactProjectsSection = ({
               </div>
 
               <div className="flex flex-wrap gap-2 mb-5">
-                {project.technologies.map((tech, techIndex) => (
+                {project.technologies.map((tech) => (
                   <span
                     key={tech}
-<<<<<<< HEAD
                     className="rounded-xl border border-[color:var(--line-strong)] bg-white px-3 py-1 text-xs font-medium text-second"
-=======
-                    className={`rounded-full px-3 py-1 text-xs font-medium ${
-                      techIndex % 2 === 0 ? "accent-pill" : "warm-pill"
-                    }`}
->>>>>>> 12cabbc283c0e6e6f6d54fe214b2b376af59c11f
                   >
                     {tech}
                   </span>
