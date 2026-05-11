@@ -28,6 +28,8 @@ function App() {
         title="개인 프로젝트"
         description="직접 기획하고 구현하며 정보 구조, 상태 관리, 사용자 흐름을 스스로 설계해 본 작업들입니다."
         projects={personalProjects}
+        showImages
+        columns={2}
       />
 
       <CompactProjectsSection

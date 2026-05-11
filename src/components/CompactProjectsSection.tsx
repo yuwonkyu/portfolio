@@ -6,6 +6,8 @@ interface CompactProjectsSectionProps {
   title: string;
   description: string;
   projects: CompactProject[];
+  showImages?: boolean;
+  columns?: 2 | 3;
 }
 
 const CompactProjectsSection = ({
@@ -14,7 +16,14 @@ const CompactProjectsSection = ({
   title,
   description,
   projects,
+  showImages = false,
+  columns = 3,
 }: CompactProjectsSectionProps) => {
+  const gridClass =
+    columns === 2
+      ? "grid lg:grid-cols-2 gap-6"
+      : "grid md:grid-cols-2 xl:grid-cols-3 gap-6";
+
   return (
     <section id={id} className="py-16 sm:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -30,14 +39,14 @@ const CompactProjectsSection = ({
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-6">
+        <div className={gridClass}>
           {projects.map((project, index) => (
             <article
               key={project.id}
               className="surface-card rounded-[1.85rem] overflow-hidden flex flex-col"
             >
-              {project.imageUrl && (
-                <div className="h-44 overflow-hidden bg-[color:var(--bg-surface-soft)] border-b border-[color:var(--line-soft)]">
+              {showImages && project.imageUrl && (
+                <div className="h-56 overflow-hidden bg-[color:var(--bg-surface-soft)] border-b border-[color:var(--line-soft)]">
                   <img
                     src={project.imageUrl}
                     alt={project.imageAlt ?? project.title}
@@ -49,74 +58,74 @@ const CompactProjectsSection = ({
               )}
 
               <div className="p-6 flex flex-col flex-1">
-              <div className="flex items-center justify-between gap-3 mb-4">
-                <span className="badge-soft rounded-full px-3 py-1 text-xs font-medium">
-                  {project.category}
-                </span>
-                <span className="text-third text-xs">#{index + 1}</span>
-              </div>
-
-              <h3 className="text-xl font-bold text-main mb-3">
-                {project.title}
-              </h3>
-              <p className="text-second leading-relaxed mb-4">
-                {project.summary}
-              </p>
-
-              <div className="space-y-3 text-second text-sm leading-relaxed mb-5">
-                {project.description.map((item) => (
-                  <p key={item}>{item}</p>
-                ))}
-              </div>
-
-              <div className="flex flex-wrap gap-2 mb-5">
-                {project.technologies.map((tech) => (
-                  <span
-                    key={tech}
-                    className="rounded-xl border border-[color:var(--line-strong)] bg-white px-3 py-1 text-xs font-medium text-second"
-                  >
-                    {tech}
+                <div className="flex items-center justify-between gap-3 mb-4">
+                  <span className="badge-soft rounded-full px-3 py-1 text-xs font-medium">
+                    {project.category}
                   </span>
-                ))}
-              </div>
+                  <span className="text-third text-xs">#{index + 1}</span>
+                </div>
 
-              <div className="mt-auto space-y-3 text-sm leading-relaxed mb-5">
-                {project.collaborationNote && (
-                  <p className="text-second">
-                    <span className="text-main font-medium">협업 관점</span>{" "}
-                    {project.collaborationNote}
-                  </p>
-                )}
-                {project.learningNote && (
-                  <p className="text-second">
-                    <span className="text-main font-medium">배운 점</span>{" "}
-                    {project.learningNote}
-                  </p>
-                )}
-              </div>
+                <h3 className="text-xl font-bold text-main mb-3">
+                  {project.title}
+                </h3>
+                <p className="text-second leading-relaxed mb-4">
+                  {project.summary}
+                </p>
 
-              <div className="flex gap-3 text-sm">
-                {project.liveUrl && (
-                  <a
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex-1 rounded-full bg-[color:var(--accent-primary)] px-4 py-2.5 text-center font-medium text-white"
-                  >
-                    Live
-                  </a>
-                )}
-                {project.githubUrl && (
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex-1 rounded-full border border-[color:var(--line-strong)] bg-white px-4 py-2.5 text-center font-medium text-main"
-                  >
-                    GitHub
-                  </a>
-                )}
-              </div>
+                <div className="space-y-3 text-second text-sm leading-relaxed mb-5">
+                  {project.description.map((item) => (
+                    <p key={item}>{item}</p>
+                  ))}
+                </div>
+
+                <div className="flex flex-wrap gap-2 mb-5">
+                  {project.technologies.map((tech) => (
+                    <span
+                      key={tech}
+                      className="rounded-xl border border-[color:var(--line-strong)] bg-white px-3 py-1 text-xs font-medium text-second"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+
+                <div className="mt-auto space-y-3 text-sm leading-relaxed mb-5">
+                  {project.collaborationNote && (
+                    <p className="text-second">
+                      <span className="text-main font-medium">협업 관점</span>{" "}
+                      {project.collaborationNote}
+                    </p>
+                  )}
+                  {project.learningNote && (
+                    <p className="text-second">
+                      <span className="text-main font-medium">배운 점</span>{" "}
+                      {project.learningNote}
+                    </p>
+                  )}
+                </div>
+
+                <div className="flex gap-3 text-sm">
+                  {project.liveUrl && (
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex-1 rounded-full bg-[color:var(--accent-primary)] px-4 py-2.5 text-center font-medium text-white"
+                    >
+                      Live
+                    </a>
+                  )}
+                  {project.githubUrl && (
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex-1 rounded-full border border-[color:var(--line-strong)] bg-white px-4 py-2.5 text-center font-medium text-main"
+                    >
+                      GitHub
+                    </a>
+                  )}
+                </div>
               </div>
             </article>
           ))}
