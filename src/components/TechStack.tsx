@@ -10,28 +10,28 @@ interface TechCategory {
 const TechStack = ({ className = "" }: TechStackProps) => {
   const techCategories: TechCategory[] = [
     {
-      title: "Frontend",
+      title: "Frontend · Web",
       techs: ["React 19", "Next.js 16", "TypeScript", "App Router"],
     },
     {
-      title: "Styling & UI",
-      techs: ["Tailwind CSS v4", "FSD Architecture", "Responsive UI", "Figma"],
+      title: "Frontend · Mobile",
+      techs: ["React Native", "Expo", "NativeWind", "EAS Build"],
     },
     {
-      title: "State & Forms",
-      techs: ["Zustand", "TanStack Query", "React Hook Form", "Upstash Redis"],
+      title: "Styling & Architecture",
+      techs: ["Tailwind CSS v4", "FSD Architecture", "Figma", "Responsive UI"],
     },
     {
-      title: "Dev Tools",
-      techs: ["Turbopack", "Vite", "npm", "pnpm"],
+      title: "State & Data",
+      techs: ["Zustand", "TanStack Query", "React Hook Form", "Supabase"],
     },
     {
-      title: "Version Control & Deploy",
-      techs: ["Git", "GitHub", "Vercel"],
+      title: "Infra & Deploy",
+      techs: ["Vercel", "Upstash Redis", "Cloudinary", "Git / GitHub"],
     },
     {
-      title: "AI Tools",
-      techs: ["GitHub Copilot", "CodeRabbit"],
+      title: "AI & Dev Tools",
+      techs: ["Claude API", "GitHub Copilot", "CodeRabbit", "Vite"],
     },
   ];
 
@@ -44,7 +44,7 @@ const TechStack = ({ className = "" }: TechStackProps) => {
           </p>
           <h3 className="text-lg font-bold text-main sm:text-xl">핵심 기술 스택</h3>
         </div>
-        <div className="hidden text-sm text-third sm:block">실무 프로젝트 중심</div>
+        <div className="hidden text-sm text-third sm:block">웹 · 앱 실서비스 기반</div>
       </div>
 
       <div className="grid grid-cols-1 gap-5 md:grid-cols-2">

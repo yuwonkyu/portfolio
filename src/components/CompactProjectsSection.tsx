@@ -34,8 +34,21 @@ const CompactProjectsSection = ({
           {projects.map((project, index) => (
             <article
               key={project.id}
-              className="surface-card rounded-[1.85rem] p-6 flex flex-col"
+              className="surface-card rounded-[1.85rem] overflow-hidden flex flex-col"
             >
+              {project.imageUrl && (
+                <div className="h-44 overflow-hidden bg-[color:var(--bg-surface-soft)] border-b border-[color:var(--line-soft)]">
+                  <img
+                    src={project.imageUrl}
+                    alt={project.imageAlt ?? project.title}
+                    className="w-full h-full object-cover object-top"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+              )}
+
+              <div className="p-6 flex flex-col flex-1">
               <div className="flex items-center justify-between gap-3 mb-4">
                 <span className="badge-soft rounded-full px-3 py-1 text-xs font-medium">
                   {project.category}
@@ -103,6 +116,7 @@ const CompactProjectsSection = ({
                     GitHub
                   </a>
                 )}
+              </div>
               </div>
             </article>
           ))}
