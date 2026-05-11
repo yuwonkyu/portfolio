@@ -46,11 +46,11 @@ const CompactProjectsSection = ({
               className="surface-card rounded-[1.85rem] overflow-hidden flex flex-col"
             >
               {showImages && project.imageUrl && (
-                <div className="h-56 overflow-hidden bg-[color:var(--bg-surface-soft)] border-b border-[color:var(--line-soft)]">
+                <div className="h-72 overflow-hidden bg-[color:var(--bg-surface-soft)] border-b border-[color:var(--line-soft)] flex items-center justify-center p-2">
                   <img
                     src={project.imageUrl}
                     alt={project.imageAlt ?? project.title}
-                    className="w-full h-full object-cover object-top"
+                    className="max-w-full max-h-full object-contain"
                     loading="lazy"
                     decoding="async"
                   />
