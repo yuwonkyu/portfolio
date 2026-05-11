@@ -30,7 +30,7 @@ const CompactProjectsSection = ({
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 gap-6">
           {projects.map((project, index) => (
             <article
               key={project.id}

@@ -17,7 +17,6 @@ export interface FeaturedProject extends BaseProject {
   contribution: string[];
   collaboration: string[];
   outcomes: string[];
-  highlights: string[];
 }
 
 export interface CompactProject extends BaseProject {
@@ -32,6 +31,50 @@ export interface CollaborationStory {
 }
 
 export const featuredProjects: FeaturedProject[] = [
+  {
+    id: "live-instalink",
+    title: "InstaLink",
+    period: "2026",
+    team: "1인 사업자 대상 템플릿형 링크 서비스 1인 개발",
+    role: "제품 기획, 템플릿 구조 설계, 확장 가능한 데이터·컴포넌트 아키텍처 설계 및 구현",
+    summary:
+      "인스타그램 중심으로 고객을 유치하는 1인 사업자를 위한 링크 전용 페이지 서비스입니다. 기존 링크 모음 서비스보다 예약·상담 전환에 집중해 불필요한 DM과 반복 문의를 줄이도록 기획했습니다.",
+    description: [
+      "브랜드 소개·서비스·가격·후기·운영시간·위치·SNS 링크를 한 흐름 안에서 확인할 수 있도록 구성했습니다.",
+      "모든 정보를 본 고객이 바로 예약 또는 필요한 질문으로 연결될 수 있도록 카카오톡 오픈채팅 CTA를 중심 동선으로 배치했습니다.",
+      "여러 업종이 사용할 수 있는 템플릿형 서비스로 확장성과 운영 전략까지 함께 설계하는 것이 핵심 과제였습니다.",
+    ],
+    contribution: [
+      "슬러그 기반 페이지 분기 구조 설계",
+      "템플릿형 서비스에 맞는 데이터와 UI 컴포넌트 분리",
+      "중복 타입 정리와 옵션화 가능한 구조 설계",
+      "6개 테마 기반 스타일 시스템 구현",
+      "이미지 성능을 고려한 Cloudinary 연동 방식 적용",
+      "향후 유료화·운영 확장을 고려한 유지보수 구조 설계",
+    ],
+    collaboration: [
+      "개인 수익화를 목표로 한 제품 성격이 강해, 단일 사이트가 아니라 여러 고객에게 반복 제공 가능한 구조로 설계했습니다.",
+      "처음 만드는 템플릿 판매형 서비스여서 배포 방식과 고객 데이터 관리 구조를 초기에 함께 고민했습니다.",
+      "이미지를 직접 저장할 경우 성능·용량 문제가 커질 수 있어 Cloudinary에 저장 후 링크를 가져오는 방식으로 관리 전략을 정리했습니다.",
+    ],
+    outcomes: [
+      "1인 사업자가 DM 상담을 줄이고 예약 전환에 집중할 수 있도록 돕는 목적형 링크 서비스를 구현했습니다.",
+      "데이터와 템플릿 컴포넌트를 분리한 구조 덕분에 새로운 업종·테마·옵션을 추가하기 쉬운 확장성 있는 기반을 마련했습니다.",
+      "서비스형 템플릿을 실제 수익 모델로 연결하기 위한 초기 제품 구조를 만든 프로젝트였습니다.",
+    ],
+    technologies: [
+      "Next.js",
+      "App Router",
+      "TypeScript",
+      "Tailwind CSS v4",
+      "Vercel",
+      "Cloudinary",
+    ],
+    imageUrl: "/images/instalink.png",
+    imageAlt: "InstaLink 메인 화면",
+    liveUrl: "https://kku-ui.vercel.app/",
+    githubUrl: "https://github.com/yuwonkyu/InstaLink",
+  },
   {
     id: "live-sunglitter",
     title: "윤슬이집",
@@ -63,7 +106,6 @@ export const featuredProjects: FeaturedProject[] = [
       "예약 수에 따른 날짜 색상 구분과 간결한 등록 폼으로 캘린더 상태를 빠르게 읽고 관리할 수 있게 했습니다.",
       "운영 목적이 분명한 링크형 서비스와 관리자 화면을 하나의 제품 경험으로 연결한 프로젝트가 되었습니다.",
     ],
-    highlights: ["실 운영 서비스", "관리자 UX 설계", "공유 캘린더 구조"],
     technologies: [
       "Next.js",
       "App Router",
@@ -108,7 +150,6 @@ export const featuredProjects: FeaturedProject[] = [
       "1주일가량의 후속 보수 작업까지 포함해 실제 클라이언트 만족도를 높이고 확장·유지보수에 유리한 코드베이스를 남겼습니다.",
       "기술적 이상향보다 프로젝트 목표·일정·유지보수 현실을 우선하는 판단 경험을 얻은 작업이었습니다.",
     ],
-    highlights: ["5일 내 납품", "클라이언트 협업", "FSD 구조화"],
     technologies: [
       "Next.js 16",
       "App Router",
@@ -120,51 +161,6 @@ export const featuredProjects: FeaturedProject[] = [
     imageUrl: "/images/OMGN.png",
     imageAlt: "OMGN 메인 화면",
     liveUrl: "https://omgn.vercel.app/",
-  },
-  {
-    id: "live-instalink",
-    title: "InstaLink",
-    period: "2026",
-    team: "1인 사업자 대상 템플릿형 링크 서비스 1인 개발",
-    role: "제품 기획, 템플릿 구조 설계, 확장 가능한 데이터·컴포넌트 아키텍처 설계 및 구현",
-    summary:
-      "인스타그램 중심으로 고객을 유치하는 1인 사업자를 위한 링크 전용 페이지 서비스입니다. 기존 링크 모음 서비스보다 예약·상담 전환에 집중해 불필요한 DM과 반복 문의를 줄이도록 기획했습니다.",
-    description: [
-      "브랜드 소개·서비스·가격·후기·운영시간·위치·SNS 링크를 한 흐름 안에서 확인할 수 있도록 구성했습니다.",
-      "모든 정보를 본 고객이 바로 예약 또는 필요한 질문으로 연결될 수 있도록 카카오톡 오픈채팅 CTA를 중심 동선으로 배치했습니다.",
-      "여러 업종이 사용할 수 있는 템플릿형 서비스로 확장성과 운영 전략까지 함께 설계하는 것이 핵심 과제였습니다.",
-    ],
-    contribution: [
-      "슬러그 기반 페이지 분기 구조 설계",
-      "템플릿형 서비스에 맞는 데이터와 UI 컴포넌트 분리",
-      "중복 타입 정리와 옵션화 가능한 구조 설계",
-      "6개 테마 기반 스타일 시스템 구현",
-      "이미지 성능을 고려한 Cloudinary 연동 방식 적용",
-      "향후 유료화·운영 확장을 고려한 유지보수 구조 설계",
-    ],
-    collaboration: [
-      "개인 수익화를 목표로 한 제품 성격이 강해, 단일 사이트가 아니라 여러 고객에게 반복 제공 가능한 구조로 설계했습니다.",
-      "처음 만드는 템플릿 판매형 서비스여서 배포 방식과 고객 데이터 관리 구조를 초기에 함께 고민했습니다.",
-      "이미지를 직접 저장할 경우 성능·용량 문제가 커질 수 있어 Cloudinary에 저장 후 링크를 가져오는 방식으로 관리 전략을 정리했습니다.",
-    ],
-    outcomes: [
-      "1인 사업자가 DM 상담을 줄이고 예약 전환에 집중할 수 있도록 돕는 목적형 링크 서비스를 구현했습니다.",
-      "데이터와 템플릿 컴포넌트를 분리한 구조 덕분에 새로운 업종·테마·옵션을 추가하기 쉬운 확장성 있는 기반을 마련했습니다.",
-      "서비스형 템플릿을 실제 수익 모델로 연결하기 위한 초기 제품 구조를 만든 프로젝트였습니다.",
-    ],
-    highlights: ["제품화 가능성", "템플릿 구조", "확장성 중심 설계"],
-    technologies: [
-      "Next.js",
-      "App Router",
-      "TypeScript",
-      "Tailwind CSS v4",
-      "Vercel",
-      "Cloudinary",
-    ],
-    imageUrl: "/images/linktree.png",
-    imageAlt: "InstaLink 메인 화면",
-    liveUrl: "https://kku-ui.vercel.app/",
-    githubUrl: "https://github.com/yuwonkyu/InstaLink",
   },
 ];
 

@@ -1,196 +1,81 @@
-# 🚀 Frontend Developer Portfolio
+# 유원규 포트폴리오
 
-> 게임 UI/UX & 프론트엔드 개발자의 성장 여정을 담은 포트폴리오
+> 클라이언트 납품부터 앱 스토어 출시까지, 완성된 제품을 만드는 프론트엔드 개발자
 
-## 📖 Overview
+## 기술 스택
 
-안녕하세요! 게임 UI/UX 및 프론트엔드 개발에 관심이 많은 개발자입니다.  
-코드잇 부트캠프를 통해 체계적으로 학습하며, 기초부터 심화까지 단계별로 성장한 과정을 포트폴리오에 담았습니다.
+| 영역 | 기술 |
+|---|---|
+| Frontend · Web | React 19, Next.js 16, TypeScript, App Router |
+| Frontend · Mobile | React Native, Expo, NativeWind, EAS Build |
+| Styling & Architecture | Tailwind CSS v4, FSD Architecture, Figma |
+| State & Data | Zustand, TanStack Query, React Hook Form, Supabase |
+| Infra & Deploy | Vercel, Upstash Redis, Cloudinary, Git / GitHub |
+| AI & Dev Tools | Claude API, GitHub Copilot, CodeRabbit, Vite |
 
-**🎯 핵심 가치**: 사용자에게 즐거움과 편의성을 제공하는 인터페이스 구현
+## 프로젝트 구성
 
-## 🎨 Portfolio Highlights
+### 주요 프로젝트
 
-### 🌱 4U - 오픈마인드 (기초 프로젝트)
+| 프로젝트 | 설명 | 스택 |
+|---|---|---|
+| [InstaLink](https://kku-ui.vercel.app/) | 1인 사업자를 위한 템플릿형 링크 페이지 서비스 | Next.js, Tailwind CSS v4, Cloudinary |
+| [윤슬이집](https://sun-glitter.vercel.app/) | 예약 현황 공유 기능을 결합한 실운영 서비스 | Next.js, Upstash Redis |
+| [OMGN](https://omgn.vercel.app/) | 클라이언트 의뢰 포트폴리오 사이트 (5일 납품) | Next.js 16, FSD, Tailwind CSS v4 |
 
-- **기간**: 2025.03 ~ 2025.04 (3주)
-- **역할**: 메인 페이지 & 질문 모달 개발
-- **성과**: 첫 팀 프로젝트로 React 컴포넌트 기반 개발 경험
-- **기술**: React, JavaScript, Tailwind CSS, Axios, React Router
-- **배포**: [Live Demo](https://4-u-tau.vercel.app/) | [GitHub](https://github.com/codeit-FE15-4U/4U)
+### 개인 · 앱 프로젝트
 
-### 🍻 SGS - 술 마시는 개발자 생활 (중급 프로젝트)
+| 프로젝트 | 설명 | 스택 |
+|---|---|---|
+| [랜덤냠냠](https://github.com/yuwonkyu/random-nyamnyam) | 슬라임 캐릭터가 오늘 메뉴를 골라주는 Android 앱 (Google Play 베타) | React Native, Expo, Supabase |
+| [TemplateGallery](https://template-gallery-two.vercel.app/) | 코드 없이 포트폴리오를 만들고 내보내는 템플릿 편집 서비스 | Next.js 15, Zustand, html2pdf.js |
+| [Project SiteDraw](https://project-site-draw.vercel.app) | FSD 구조 기반 건축 도면 뷰어 | Next.js 16, React 19, Turbopack |
+| [RealWeather](https://realweather-frontend.vercel.app/) | TanStack Query · Zustand 기반 날씨 앱 | React, Vite, TanStack Query |
 
-- **기간**: 2025.05 ~ 2025.06 (3주)
-- **역할**: 팀장, GitHub 환경 구성, 프로필 페이지 & 공통 컴포넌트 개발
-- **성과**: JWT 인증 시스템 구현, 팀 리더십 경험
-- **기술**: Next.js, TypeScript, React, Tailwind CSS, Axios
-- **배포**: [Live Demo](https://sgs-sandy.vercel.app/) | [GitHub](https://github.com/codeit-SGS/SGS)
+### 학습 팀 프로젝트
 
-### 🌍 Wazy - 글로벌 노마드 플랫폼 (심화 프로젝트)
+| 프로젝트 | 단계 | 링크 |
+|---|---|---|
+| Wazy | 심화 | [Live](https://codenomad-8itj.vercel.app/) · [GitHub](https://github.com/codeNomad-FE/wazy) |
+| SGS | 중급 | [Live](https://sgs-sandy.vercel.app/) · [GitHub](https://github.com/codeit-SGS/SGS) |
+| 4U | 초급 | [Live](https://4-u-tau.vercel.app/) · [GitHub](https://github.com/codeit-FE15-4U/4U) |
 
-- **기간**: 2025.07 ~ 2025.07 (4주)
-- **역할**: 체험 등록/수정 페이지, 공통 컴포넌트 개발
-- **성과**: React Hook Form + Zod 조합으로 폼 검증 시스템 구현
-- **기술**: Next.js, TypeScript, Zustand, React Hook Form, Zod, Tailwind CSS
-- **배포**: [Live Demo](https://codenomad-8itj.vercel.app/) | [GitHub](https://github.com/codeNomad-FE/wazy)
-
-### 🎮 Make Character - 나의 캐릭터 커스터마이징 (개인 프로젝트)
-
-- **기간**: 2025.08 ~ 2025.09 (1개월)
-- **역할**: 전체 기획, 디자인, 개발 (개인 프로젝트)
-- **성과**: 게임 캐릭터 커스터마이징 웹 서비스, 한/일/영 다국어 지원
-- **기술**: Next.js, TypeScript, Tailwind CSS, Zustand, Figma, LibreSprite
-- **배포**: [Live Demo](https://make-character-v2.vercel.app/) | [GitHub](https://github.com/yuwonkyu/makeCharacter)
-
-### 📋 TemplateGallery - 포트폴리오 템플릿 에디터 (개인 프로젝트)
-
-- **역할**: 전체 기획, 디자인, 개발 (개인 프로젝트)
-- **성과**: 코드 없이 포트폴리오를 편집하고 HTML/PDF로 내보내는 노코드 에디터 구현, 다국어(i18n) 지원
-- **기술**: Next.js 15, TypeScript 5, Tailwind CSS 4, Zustand, next-intl, html2pdf.js, Zod
-- **배포**: [Live Demo](https://template-gallery-two.vercel.app/) | [GitHub](https://github.com/yuwonkyu/TemplateGallery)
-
-### 🏗 Project SiteDraw - 건설 도면 뷰어 (개인 프로젝트)
-
-- **역할**: 전체 기획, 디자인, 개발 (면접 과제 → 개인 프로젝트)
-- **성과**: 건설 현장 도면 탐색 및 리비전 이력 확인 웹 뷰어, FSD(Feature-Sliced Design) 아키텍처 적용
-- **기술**: Next.js 16 (App Router), Turbopack, TypeScript (Strict), React 19, Tailwind CSS 4
-- **배포**: [Live Demo](https://project-site-draw.vercel.app) | [GitHub](https://github.com/yuwonkyu/Project_SiteDraw)
-
-### 🌤 RealWeather - 실시간 날씨 앱 (개인 프로젝트)
-
-- **역할**: 전체 기획, 디자인, 개발 (개인 프로젝트)
-- **성과**: Kakao Maps API + OpenWeather API 연동, TanStack Query로 서버 상태 관리, framer-motion 애니메이션 구현
-- **기술**: React, TypeScript, Vite, TanStack Query, Zustand, React Router, Tailwind CSS, framer-motion
-- **배포**: [Live Demo](https://realweather-frontend.vercel.app/) | [GitHub](https://github.com/yuwonkyu/realweather-frontend)
-
-## 🛠 Tech Stack
-
-### Frontend & Styling
-
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwind-css&logoColor=white)
-
-### State & Forms
-
-![Zustand](https://img.shields.io/badge/Zustand-000000?style=flat-square&logo=zustand&logoColor=white)
-![TanStack Query](https://img.shields.io/badge/TanStack_Query-FF4154?style=flat-square&logo=reactquery&logoColor=white)
-![React Hook Form](https://img.shields.io/badge/React_Hook_Form-EC5990?style=flat-square&logo=reacthookform&logoColor=white)
-![Zod](https://img.shields.io/badge/Zod-3E67B1?style=flat-square&logo=zod&logoColor=white)
-
-### Styling & UI
-
-![MUI](https://img.shields.io/badge/MUI-007FFF?style=flat-square&logo=mui&logoColor=white)
-![framer--motion](https://img.shields.io/badge/framer--motion-EF008F?style=flat-square&logo=framer&logoColor=white)
-
-### Dev Tools
-
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
-![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=flat-square&logo=eslint&logoColor=white)
-![Prettier](https://img.shields.io/badge/Prettier-F7B93E?style=flat-square&logo=prettier&logoColor=black)
-
-### Design & Collaboration
-
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
-![LibreSprite](https://img.shields.io/badge/LibreSprite-4B8BBE?style=flat-square&logo=pixelart&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
-
-### AI Tools
-
-![GitHub Copilot](https://img.shields.io/badge/GitHub_Copilot-000000?style=flat-square&logo=github&logoColor=white)
-![CodeRabbit](https://img.shields.io/badge/CodeRabbit-10B981?style=flat-square&logo=rabbit&logoColor=white)
-
-## 🏗 Project Structure
+## 프로젝트 구조
 
 ```
-portfolio/
+introduce/
 ├── public/
-│   └── images/            # Project screenshots & assets
+│   ├── images/                    # 프로젝트 스크린샷
+│   └── me.jpg                     # 프로필 사진
 ├── src/
 │   ├── components/
-│   │   ├── Header.tsx         # 네비게이션 헤더
-│   │   ├── Footer.tsx         # 푸터
-│   │   ├── IntroSection.tsx   # 히어로 섹션 (프로필)
-│   │   ├── ProjectSection.tsx # 프로젝트 쇼케이스 섹션
-│   │   ├── ProjectCard.tsx    # 개별 프로젝트 카드
-│   │   └── TechStack.tsx      # 기술 스택 디스플레이
+│   │   ├── Header.tsx             # 네비게이션
+│   │   ├── IntroSection.tsx       # 히어로 · 프로필
+│   │   ├── TechStack.tsx          # 기술 스택
+│   │   ├── FeaturedProjectsSection.tsx   # 주요 프로젝트
+│   │   ├── CompactProjectsSection.tsx    # 개인 · 팀 프로젝트
+│   │   ├── CollaborationSection.tsx      # 협업 스토리
+│   │   └── Footer.tsx             # 연락처
 │   ├── data/
-│   │   └── projectsData.ts    # 프로젝트 데이터 및 설정
-│   ├── App.tsx            # 메인 애플리케이션 컴포넌트
-│   └── main.tsx           # 애플리케이션 진입점
+│   │   └── projectsData.ts        # 모든 프로젝트 데이터
+│   ├── App.tsx
+│   ├── App.css                    # 디자인 시스템 (CSS 변수)
+│   └── main.tsx
 └── package.json
 ```
 
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Node.js 18+
-- pnpm (권장) 또는 npm/yarn
-
-### Installation
+## 로컬 실행
 
 ```bash
-# Clone the repository
-git clone https://github.com/yuwonkyu/portfolio.git
-cd portfolio
-
-# Install dependencies
 pnpm install
-
-# Start development server
 pnpm dev
-
-# Build for production
-pnpm build
-
-# Preview production build
-pnpm preview
 ```
 
-## 🎨 Features
+## 배포
 
-- **🎯 반응형 디자인**: 모바일부터 데스크톱까지 완벽 대응
-- **✨ 모던 UI/UX**: Tailwind CSS 기반의 세련된 인터페이스
-- **🚀 빠른 로딩**: Vite 기반의 최적화된 번들링
-- **📱 SEO 최적화**: 메타 태그 및 접근성 고려
-- **🎨 인터랙티브 효과**: 부드러운 호버 애니메이션
-- **📊 프로젝트 쇼케이스**: 체계적인 난이도별 프로젝트 분류
+Vercel 자동 배포. `main` 브랜치 푸시 시 즉시 반영됩니다.
 
-## 🏆 Development Journey
+## 연락
 
-### 📈 성장 지표
-
-- **프로젝트 완료**: 8개 (기초 → 중급 → 심화 → 개인 5개)
-- **팀 프로젝트 경험**: 5인 팀 리더 경험
-- **개인 프로젝트**: 기획부터 디자인, 개발까지 전체 사이클 경험 (5개)
-- **기술 스택 확장**: JavaScript → TypeScript, React → Next.js, TanStack Query 도입
-- **협업/AI 도구 활용**: GitHub, Figma, GitHub Copilot, CodeRabbit, LibreSprite
-
-### 🎯 주요 성취
-
-1. **컴포넌트 설계**: 재사용 가능한 컴포넌트 아키텍처 구현
-2. **상태 관리**: JWT 인증, Zustand + TanStack Query를 활용한 클라이언트/서버 상태 관리
-3. **폼 검증**: React Hook Form + Zod 조합으로 견고한 폼 시스템
-4. **팀 리더십**: 개발 환경 세팅, 코드 리뷰, 일정 관리 경험
-5. **개인 프로젝트**: 기획·디자인·개발 전체 사이클 경험, 다국어 지원·노코드 에디터·FSD 아키텍처 등 다양한 시도
-6. **AI 도구 활용**: GitHub Copilot·CodeRabbit을 활용한 코드 품질 향상
-
-## 📞 Contact
-
-- **Email**: [이메일주소](duck01777@naver.com)
-- **GitHub**: [@yuwonkyu](https://github.com/yuwonkyu)
-- **Portfolio**: [Live Demo](https://portfolio-wonkyu.vercel.app/)
-
----
-
-> **"늦둥이지만 풍부한 경험과 뛰어난 책임감으로 프로젝트에 임합니다."**  
-> 함께 성장할 수 있는 기회를 기대합니다! 🚀
-
----
-
-_Last updated: 2026-03-19_
+- Email: [duck01777@naver.com](mailto:duck01777@naver.com)
+- GitHub: [@yuwonkyu](https://github.com/yuwonkyu)
